@@ -83,6 +83,7 @@ footer{
      display: flex;
      justify-content: space-around;
 }
+
 .about{
      width: 193px;
      height: 211px;
@@ -90,7 +91,7 @@ footer{
      flex-direction: column;
      justify-content: space-between;
 }
-.about>a{
+.about>a,b{
      color:#FFFFFF;
      text-decoration: none;
      font-size: 20px;
@@ -103,7 +104,7 @@ footer{
      justify-content: space-between;
 }
 
-.property_types>a{
+.property_types>a,b{
      color:#FFFFFF;
      text-decoration: none;
      font-size: 20px;
@@ -115,11 +116,12 @@ footer{
      flex-direction: column;
      justify-content: space-between;   
 }
-.support_footer>a{
+.support_footer>a,b{
      color:#FFFFFF;
      text-decoration: none;
      font-size: 20px;
 }
+
 footer > a{
      margin-top: 64px;
      margin-left: 103px;
