@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="keywords" content="HTML,CSS,JavaScript">
   <meta name="author" content="Albert Bairamulov">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../if-html/css/style.css">
-  <title>Lesson4</title>
-
+  <title>Lesson6</title>
 </head>
-
 <body>
-  <div class="TripHouse_Site">
+  <div class="tripHouse_site">
     <header>
       <img src="img/logo_vector.png" alt="">
       <div class="wrapper_nav">
@@ -20,9 +17,12 @@
           <a href="">Stays</a>
           <hr />
         </div>
-        <a class="attractions" href="">Attractions</a>
-        <img class="night" src="img/Night.png" alt="night">
-        <img class="account" src="img/AccountCircle.png" alt="account">
+        <div class="attractions">
+          <a href="">Attractions</a>
+          <hr />
+        </div>
+        <a href=""><img class="night" src="img/Night.png" alt="night"></a>
+        <a href=""><img class="account" src="img/AccountCircle.png" alt="account"></a>
       </div>
     </header>
     <div class="page">
@@ -31,8 +31,8 @@
         to live, work or just relax
       </h1>
       <div class="label_form">
-        <a class="label_city_input">Your destination or hotel name</a>
-        <a class="label_num_people_input">Check-in — Check-out</a>
+        <label class="label_city_input">Your destination or hotel name</label>
+        <label class="label_num_people_input">Check-in — Check-out</label>
       </div>
       <form>
         <input class="city_input" value="NewYork" type="search">
@@ -48,7 +48,5 @@
       </div>
     </div>
   </div>
-
 </body>
-
 </html>

@@ -1,16 +1,16 @@
 @import url(fonts.css);
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 a {
   font-family: "Roboto";
   font-weight: 400;
   text-decoration: none;
 }
-.TripHouse_Site {
+.tripHouse_site {
   width: 100%;
   height: 62.5vw;
   background: url(../img/background.png);
@@ -53,6 +53,16 @@ a {
 }
 .attractions {
   margin-right: 3.33vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.attractions:hover > hr {
+  margin-top: 2.43vw;
+  position: absolute;
+  width: 6.47vw;
+  height: 1px;
+  background-color: #f5bd41;
 }
 .stays {
   margin-right: 1.667vw;
@@ -60,11 +70,11 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.stays > hr {
+.stays:hover > hr {
   margin-top: 2.43vw;
   position: absolute;
   width: 3.47vw;
-  height: 3px;
+  height: 1px;
   background-color: #f5bd41;
 }
 .page {
@@ -83,10 +93,18 @@ a {
 .label_city_input {
   font-size: 1.25vw;
   margin-left: 1.67vw;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-decoration: none;
 }
 .label_num_people_input {
   font-size: 1.25vw;
   margin-left: 15.35vw;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-decoration: none;
 }
 h1 {
   width: 37.6vw;
@@ -100,13 +118,15 @@ form {
   display: flex;
   flex-direction: row;
   background-color: white;
-  border-radius: 0.2vw;
-  border-top-right-radius: 0.6vw;
-  border-bottom-right-radius: 0.6vw;
+  border-radius: 8px;
   margin-top: 1.67vw;
 }
 form > input {
   height: 4.4vw;
+  border-radius: 8px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
 }
 .city_input {
   margin-left: 0.2vw;
@@ -115,8 +135,11 @@ form > input {
 }
 .date_input {
   width: 18vw;
+  border: none;
+  border-radius: 8px;
+}
+.date_input:hover {
   border: 0.2vw solid #f5bd41;
-  border-radius: 0.6vw;
 }
 .num_people_input {
   width: 22vw;
@@ -125,7 +148,7 @@ form > input {
 form > button {
   width: 13.33vw;
   background: #3077c6;
-  border-radius: 0.6vw;
+  border-radius: 8px;
   border: none;
   font-size: 1.667vw;
   color: white;
