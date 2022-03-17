@@ -22,81 +22,88 @@ b {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1440px;
-  height: 569px;
+  width: 100%;
+  height: 39.5vw;
   background-color: #ffffff;
 }
 h2 {
-  margin-top: 120px;
-  font-size: 40px;
+  margin-top: 8.33vw;
+  font-size: 2.78vw;
   font-weight: 500;
   font-family: "Roboto";
   text-align: center;
 }
 .container > hr {
-  margin-top: 20px;
-  width: 100px;
-  height: 4px;
+  margin-top: 1.39vw;
+  width: 6.94vw;
+  height: 0.278vw;
   background-color: #f5bd41;
 }
 .wrapper {
-  margin-top: 82px;
+  margin-top: 5.694vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 104px;
-  margin-right: 104px;
+  margin-left: 7.22vw;
+  margin-right: 7.22vw;
 }
 .reviews,
 .booking,
 .communication,
 .support {
-  width: 296px;
-  height: 176px;
+  width: 20.56vw;
+  height: 12.22vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+.reviews > a,
+.booking > a,
+.communication > a,
+.support > a {
+  font-size: 1.67vw;
+}
 .wrapper_img {
-  width: 100px;
-  height: 100px;
+  width: 6.94vw;
+  height: 6.94vw;
 }
 .support > img {
-  width: 75px;
-  height: 91.67px;
+  width: 5.21vw;
+  height: 6.37vw;
 }
 .communication > img {
-  width: 83.33px;
-  height: 83.33px;
+  width: 5.79vw;
+  height: 5.79vw;
 }
 .booking > img {
-  width: 100px;
-  height: 66.67px;
+  width: 6.94vw;
+  height: 4.63vw;
 }
 .reviews > img {
-  width: 91.67px;
-  height: 83.33px;
+  width: 6.37vw;
+  height: 5.78vw;
 }
 footer {
-  width: 1440px;
-  height: 630px;
+  width: 100%;
+  height: 43.75vw;
   background-color: #10367c;
   display: flex;
   flex-direction: column;
 }
-
+.logo {
+  display: none;
+}
 .content_footer {
-  margin-top: 120px;
-  width: 1440px;
-  height: 310px;
+  margin-top: 8.33vw;
+  width: 100%;
+  height: 21.53vw;
   display: flex;
   justify-content: space-around;
 }
-
 .about {
-  width: 193px;
-  height: 211px;
+  width: 13.4vw;
+  height: 14.65vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -105,25 +112,24 @@ footer {
 b {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.39vw;
 }
 .property_types {
-  width: 133px;
-  height: 310px;
+  width: 9.24vw;
+  height: 21.53vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .property_types > a,
 b {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.39vw;
 }
 .support_footer {
-  width: 233px;
-  height: 122px;
+  width: 16.18vw;
+  height: 8.47vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -132,12 +138,132 @@ b {
 b {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.39vw;
+}
+footer > a {
+  margin-top: 4.44vw;
+  margin-left: 7.15vw;
+  color: #ffffff;
+  font-size: 0.97vw;
 }
 
-footer > a {
-  margin-top: 64px;
-  margin-left: 103px;
-  color: #ffffff;
-  font-size: 14px;
+@media (max-width: 360px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 178vw;
+    background-color: #ffffff;
+  }
+  h2 {
+    margin-top: 6.67vw;
+    font-size: 11.11vw;
+    font-weight: 500;
+    font-family: "Roboto";
+    text-align: center;
+  }
+  hr {
+    display: none;
+  }
+  .wrapper {
+    margin-top: 9.7vw;
+    display: flex;
+    flex-direction: column;
+    height: 138.89vw;
+  }
+  .reviews > a,
+  .booking > a,
+  .communication > a,
+  .support > a {
+    font-size: 4.17vw;
+  }
+  footer {
+    width: 100%;
+    height: 56.39vw;
+    background-color: #10367c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    display: block;
+    margin-top: 11.11vw;
+    width: 27.22vw;
+    height: 5.28vw;
+  }
+  .reviews,
+  .booking,
+  .communication,
+  .support {
+    width: 82.22vw;
+    height: 27vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .support > img {
+    width: 14.58vw;
+    height: 17.825vw;
+  }
+  .communication > img {
+    width: 16.2vw;
+    height: 16.2vw;
+  }
+  .booking > img {
+    width: 19.44vw;
+    height: 12.96vw;
+  }
+  .reviews > img {
+    width: 17.825vw;
+    height: 16.2vw;
+  }
+  .content_footer {
+    margin-top: 11.11vw;
+    max-width: 62.5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  .about {
+    width: 20%;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about > a {
+    display: none;
+  }
+  .about > b,
+  .property_types > b,
+  .support_footer > b {
+    font-size: 4.17vw;
+  }
+  .property_types {
+    width: 48%;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .property_types > a {
+    display: none;
+  }
+  .support_footer {
+    width: 20%;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .support_footer > a {
+    display: none;
+  }
+  footer > a {
+    font-size: 3.333vw;
+    margin: 0;
+    margin-top: 8.89vw;
+  }
 }
