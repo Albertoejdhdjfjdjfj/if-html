@@ -5,19 +5,23 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 a {
   font-family: "Roboto";
   font-weight: 400;
 }
+
 b {
   font-family: "Roboto";
   font-weight: 500;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -26,6 +30,7 @@ b {
   height: 569px;
   background-color: #ffffff;
 }
+
 h2 {
   margin-top: 120px;
   font-size: 40px;
@@ -33,12 +38,14 @@ h2 {
   font-family: "Roboto";
   text-align: center;
 }
+
 .container > hr {
   margin-top: 20px;
   width: 100px;
   height: 4px;
   background-color: #f5bd41;
 }
+
 .wrapper {
   margin-top: 82px;
   display: flex;
@@ -47,6 +54,7 @@ h2 {
   margin-left: 104px;
   margin-right: 104px;
 }
+
 .reviews,
 .booking,
 .communication,
@@ -58,26 +66,32 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
+
 .wrapper_img {
   width: 100px;
   height: 100px;
 }
+
 .support > img {
   width: 75px;
   height: 91.67px;
 }
+
 .communication > img {
   width: 83.33px;
   height: 83.33px;
 }
+
 .booking > img {
   width: 100px;
   height: 66.67px;
 }
+
 .reviews > img {
   width: 91.67px;
   height: 83.33px;
 }
+
 footer {
   width: 1440px;
   height: 630px;
@@ -85,6 +99,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .content_footer {
   margin-top: 120px;
   width: 1440px;
@@ -92,6 +107,7 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+
 .about {
   width: 193px;
   height: 211px;
@@ -99,12 +115,14 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .about > a,
 b {
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
 }
+
 .property_types {
   width: 133px;
   height: 310px;
@@ -112,12 +130,14 @@ b {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .property_types > a,
 b {
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
 }
+
 .support_footer {
   width: 233px;
   height: 122px;
@@ -125,12 +145,14 @@ b {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .support_footer > a,
 b {
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
 }
+
 footer > a {
   margin-top: 64px;
   margin-left: 103px;
