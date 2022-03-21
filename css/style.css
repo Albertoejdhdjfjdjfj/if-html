@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto"
 }
 body {
   display: flex;
@@ -12,6 +11,7 @@ body {
   align-items: center;
 }
 a {
+  font-family: "Roboto";
   font-weight: 400;
   text-decoration: none;
 }
@@ -56,6 +56,17 @@ a {
   width: 2.78vw;
   height: 2.78vw;
 }
+.menu{
+  display: none;
+}
+.account_hover{
+  width: 2.78vw;
+  height: 2.78vw;
+  display: none;
+}
+.account:hover{
+  filter: invert(16%) sepia(100%) saturate(6087%) hue-rotate(2deg) brightness(115%) contrast(123%);  
+}
 
 .attractions {
   margin-right: 3.33vw;
@@ -63,7 +74,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.attractions>hr{
+.attractions > hr{
   display: none;
 }
 .attractions:hover > hr {
@@ -80,7 +91,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.stays>hr{
+.stays > hr{
   display: none;
 }
 .stays:hover > hr {
@@ -108,6 +119,7 @@ a {
   font-size: 1.25vw;
   margin-left: 1.67vw;
   color: white;
+  font-family: "Roboto";
   font-weight: 400;
   text-decoration: none;
 }
@@ -115,11 +127,13 @@ a {
   font-size: 1.25vw;
   margin-left: 15.35vw;
   color: white;
+  font-family: "Roboto";
   font-weight: 400;
   text-decoration: none;
 }
 h1 {
   width: 37.6vw;
+  font-family: "Roboto";
   font-size: 3.47vw;
   font-weight: 500;
   color: white;
@@ -132,9 +146,14 @@ form {
   border-radius: 8px;
   margin-top: 1.67vw;
 }
+form>div{
+  display: flex;
+  align-items: center;
+}
 form > input {
   height: 4.4vw;
   border-radius: 8px;
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 1.25vw;
 }
@@ -147,6 +166,13 @@ form > input {
   width: 18vw;
   border: none;
   border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.date_input>input{
+  width: 30%;
+  border: none;
 }
 .date_input:hover {
   border: 0.2vw solid #f5bd41;
@@ -162,6 +188,7 @@ form > button {
   border: none;
   font-size: 1.667vw;
   color: white;
+  font-family: "Roboto";
   font-weight: 500;
 }
 .wrapper_apps {
@@ -175,9 +202,11 @@ form > button {
   height: 2.78vw;
 }
 a {
+  font-family: "Roboto";
   font-weight: 400;
 }
 b {
+  font-family: "Roboto";
   font-weight: 500;
 }
 .container {
@@ -192,6 +221,7 @@ h2 {
   margin-top: 8.33vw;
   font-size: 2.78vw;
   font-weight: 500;
+  font-family: "Roboto";
   text-align: center;
 }
 .container > hr {
@@ -309,3 +339,239 @@ footer > a {
   font-size: 0.97vw;
 }
 
+
+@media (max-width: 360px) {
+  .triphouse_site{
+    width: 100%;
+    height: 148vw;
+  }
+  header{
+    width: 91%;
+    height: 13.333vw;
+    margin-top: 0;
+ }
+ header > img {
+  height: 6.67vw;
+  width: 33.87vw;
+}
+.night {
+  margin-right: 4.44vw;
+  width: 4.44vw;
+  height: 4.44vw;
+}
+.account {
+  width: 6.66vw;
+  height: 6.66vw;
+  margin-right: 4.44vw;
+}
+.attractions {
+  display: none;
+}
+.stays {
+  display: none;
+}
+.menu{
+  display: block;
+  width: 6.667vw;
+  height: 4.44vw;
+}
+.page {
+  width: 91%;
+  height: 112.5vw;
+  margin-top: 14.44vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page>h1{
+  font-size: 8.33vw;
+  width: 100%;
+}
+.label_form{
+  display: none;
+}
+form{
+  margin-top: 8.61vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 91vw;
+  height: 65vw;
+  background-color: #f5bd41;
+  border-radius: 0;
+}
+.city_input {
+  width: 86.7vw;
+  height: 13.33vw;
+  margin-left: 0;
+  border-radius: 1.11vw;
+  font-size: 4.17vw;
+  text-align: center;
+}
+.date_input {
+  width: 86.7vw;
+  height: 13.33vw;
+  font-size: 4.17vw;
+  justify-content: space-between;
+  text-align: center;
+}
+.date_input>input{
+  width: 49%;
+  height: 13.33vw ;
+  border-radius: 1.11vw;
+  text-align: center;
+}
+.date_input>div{
+  display: none;
+}
+.num_people_input {
+  width: 86.7vw;
+  height: 13.33vw;
+  border-radius: 1.11vw;
+  font-size: 4.17vw;
+  border-radius: 1.11vw;
+  text-align: center;
+}
+form > button {
+  width: 86.7vw;
+  height: 13.33vw;
+  background: #3077c6;
+  border-radius: 1.11vw;
+  font-size: 1.667vw;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 4.17vw;
+  margin-top:2.2222vw ;
+}
+.wraper-apps{
+  height: 11.1111vw;
+  margin-top: 8.89vw;
+}
+.apps > a > img {
+  width: 37.5vw;
+  height: 11.1111vw;
+}
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 178vw;
+    background-color: #ffffff;
+  }
+  h2 {
+    margin-top: 6.67vw;
+    font-size: 11.11vw;
+    font-weight: 500;
+    font-family: "Roboto";
+    text-align: center;
+  }
+  hr {
+    display: none;
+  }
+  .wrapper {
+    margin-top: 9.7vw;
+    display: flex;
+    flex-direction: column;
+    height: 138.89vw;
+  }
+  .reviews > a,
+  .booking > a,
+  .communication > a,
+  .support > a {
+    font-size: 4.17vw;
+  }
+  footer {
+    width: 100%;
+    height: 56.39vw;
+    background-color: #10367c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    display: block;
+    margin-top: 11.11vw;
+    width: 27.22vw;
+    height: 5.28vw;
+  }
+  .reviews,
+  .booking,
+  .communication,
+  .support {
+    width: 82.22vw;
+    height: 27vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .support > img {
+    width: 14.58vw;
+    height: 17.825vw;
+  }
+  .communication > img {
+    width: 16.2vw;
+    height: 16.2vw;
+  }
+  .booking > img {
+    width: 19.44vw;
+    height: 12.96vw;
+  }
+  .reviews > img {
+    width: 17.825vw;
+    height: 16.2vw;
+  }
+  .content_footer {
+    margin-top: 11.11vw;
+    max-width: 62.5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  .about {
+    width: 20%;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about > a {
+    display: none;
+  }
+  .about > b,
+  .property_types > b,
+  .support_footer > b {
+    font-size: 4.17vw;
+  }
+  .property_types {
+    width: 48%;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .property_types > a {
+    display: none;
+  }
+  .support_footer {
+    width: 20%;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .support_footer > a {
+    display: none;
+  }
+  footer > a {
+    font-size: 3.333vw;
+    margin: 0;
+    margin-top: 8.89vw;
+  }
+  
+}
