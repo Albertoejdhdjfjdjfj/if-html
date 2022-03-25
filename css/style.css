@@ -57,7 +57,11 @@ a {
   flex-direction: column;
   align-items: center;
 }
+.attractions > hr{
+  display: none;
+}
 .attractions:hover > hr {
+  display: inline-block;
   margin-top: 2.43vw;
   position: absolute;
   width: 6.47vw;
@@ -70,7 +74,11 @@ a {
   flex-direction: column;
   align-items: center;
 }
+.stays > hr{
+  display: none;
+}
 .stays:hover > hr {
+  display: inline-block;
   margin-top: 2.43vw;
   position: absolute;
   width: 3.47vw;
