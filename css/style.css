@@ -51,6 +51,9 @@ a {
   width: 2.78vw;
   height: 2.78vw;
 }
+.account:hover{
+  filter: invert(16%) sepia(100%) saturate(6087%) hue-rotate(2deg) brightness(115%) contrast(123%);  
+}
 .attractions {
   margin-right: 3.33vw;
   display: flex;
