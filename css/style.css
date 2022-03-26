@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto";
+  text-decoration: none;
 }
 body {
   display: flex;
@@ -49,6 +50,10 @@ a {
   width: 2.1vw;
   height: 2.1vw;
 }
+
+.account_after_breakpoint{
+  display: none;
+}
 .account {
   width: 2.78vw;
   height: 2.78vw;
@@ -58,7 +63,7 @@ a {
 }
 
 .account:hover{
-  filter: invert(16%) sepia(100%) saturate(6087%) hue-rotate(2deg) brightness(115%) contrast(123%);  
+  filter: brightness(0) saturate(100%) invert(88%) sepia(82%) saturate(6390%) hue-rotate(322deg) brightness(100%) contrast(92%); 
 }
 
 .attractions {
@@ -75,8 +80,9 @@ a {
   margin-top: 2.43vw;
   position: absolute;
   width: 6.47vw;
-  height: 1px;
+  height: 2px;
   background-color: #f5bd41;
+  border: none;
 }
 .stays {
   margin-right: 1.667vw;
@@ -88,11 +94,12 @@ a {
   display: none;
 }
 .stays:hover > hr {
+  border: none;
   display: inline-block;
   margin-top: 2.43vw;
   position: absolute;
   width: 3.47vw;
-  height: 1px;
+  height: 2px;
   background-color: #f5bd41;
 }
 .page {
@@ -147,10 +154,10 @@ form > input {
   font-size: 1.25vw;
 }
 .city_input {
-  margin-left: 0.2vw;
   width: 32.4vw;
   border: none;
 }
+
 .date_input {
   width: 18vw;
   border: none;
@@ -163,7 +170,7 @@ form > input {
   width: 45%;
   border: none;
 }
-.date_input:hover {
+.num_people_input:hover,.city_input:hover,.date_input:hover {
   border: 0.2vw solid #f5bd41;
 }
 .num_people_input {
