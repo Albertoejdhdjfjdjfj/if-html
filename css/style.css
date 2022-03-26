@@ -1,0 +1,145 @@
+@import url('fonts.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  font-weight: 400;
+}
+
+b {
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  height: 569px;
+  background-color: #ffffff;
+}
+
+h2 {
+  margin-top: 120px;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container > hr {
+  margin-top: 20px;
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+}
+
+.wrapper {
+  margin-top: 82px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 104px;
+  margin-right: 104px;
+}
+
+.reviews,
+.booking,
+.communication,
+.support {
+  width: 296px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper_img {
+  width: 100px;
+  height: 100px;
+}
+
+.support > img {
+  width: 75px;
+  height: 92px;
+}
+
+.communication > img {
+  width: 83px;
+  height: 83px;
+}
+
+.booking > img {
+  width: 100px;
+  height: 67px;
+}
+
+.reviews > img {
+  width: 92px;
+  height: 83px;
+}
+
+footer {
+  width: 1440px;
+  height: 630px;
+  background-color: #10367c;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_footer {
+  margin-top: 120px;
+  width: 1440px;
+  height: 310px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about {
+  width: 193px;
+  height: 211px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.property_types {
+  width: 133px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about > a,b , .support_footer >a,b ,.property_types > a,
+b {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.support_footer {
+  width: 233px;
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer > a {
+  margin-top: 64px;
+  margin-left: 103px;
+  color: #ffffff;
+  font-size: 14px;
+}
