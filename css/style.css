@@ -1,4 +1,4 @@
-@import url(fonts.css);
+@import url("fonts.css");
 
 * {
   padding: 0;
@@ -6,10 +6,16 @@
   box-sizing: border-box;
   font-family: "Roboto";
 }
+
+b {
+  font-weight: 500;
+}
+
 a {
   font-weight: 400;
   text-decoration: none;
 }
+
 .triphouse_site {
   width: 100%;
   height: 62.5vw;
@@ -20,6 +26,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
 header {
   width: 85.6vw;
   height: 3.19vw;
@@ -29,40 +36,50 @@ header {
   justify-content: space-between;
   margin-top: 3.54vw;
 }
+
 header > img {
   height: 2.78vw;
   width: 14.24vw;
 }
+
 .wrapper_nav {
   display: flex;
   align-items: center;
 }
+
 .wrapper_nav,
 a {
   color: white;
   font-size: 1.667vw;
 }
+
 .night {
   margin-right: 1.667vw;
   width: 2.1vw;
   height: 2.1vw;
 }
+
 .account {
   width: 2.78vw;
   height: 2.78vw;
 }
-.account:hover{
-  filter: invert(16%) sepia(100%) saturate(6087%) hue-rotate(2deg) brightness(115%) contrast(123%);  
+
+.account:hover {
+  filter: invert(16%) sepia(100%) saturate(6087%) hue-rotate(2deg)
+    brightness(115%) contrast(123%);
 }
+
 .attractions {
   margin-right: 3.33vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.attractions > hr{
+
+.attractions > hr {
   display: none;
 }
+
 .attractions:hover > hr {
   display: inline-block;
   margin-top: 2.43vw;
@@ -71,15 +88,18 @@ a {
   height: 1px;
   background-color: #f5bd41;
 }
+
 .stays {
   margin-right: 1.667vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.stays > hr{
+
+.stays > hr {
   display: none;
 }
+
 .stays:hover > hr {
   display: inline-block;
   margin-top: 2.43vw;
@@ -88,6 +108,7 @@ a {
   height: 1px;
   background-color: #f5bd41;
 }
+
 .page {
   width: 85.6vw;
   height: 33.8vw;
@@ -95,12 +116,14 @@ a {
   display: flex;
   flex-direction: column;
 }
+
 .label_form {
   margin-top: 6.94vw;
   display: flex;
   flex-direction: row;
   justify-content: start;
 }
+
 .label_city_input {
   font-size: 1.25vw;
   margin-left: 1.67vw;
@@ -108,6 +131,7 @@ a {
   font-weight: 400;
   text-decoration: none;
 }
+
 .label_num_people_input {
   font-size: 1.25vw;
   margin-left: 15.35vw;
@@ -115,12 +139,14 @@ a {
   font-weight: 400;
   text-decoration: none;
 }
+
 h1 {
   width: 37.6vw;
   font-size: 3.47vw;
   font-weight: 500;
   color: white;
 }
+
 form {
   width: 85vw;
   display: flex;
@@ -129,29 +155,35 @@ form {
   border-radius: 8px;
   margin-top: 1.67vw;
 }
+
 form > input {
   height: 4.4vw;
   border-radius: 8px;
   font-weight: 400;
   font-size: 18px;
 }
+
 .city_input {
   margin-left: 0.2vw;
   width: 32.4vw;
   border: none;
 }
+
 .date_input {
   width: 18vw;
   border: none;
   border-radius: 8px;
 }
+
 .date_input:hover {
   border: 0.2vw solid #f5bd41;
 }
+
 .num_people_input {
   width: 22vw;
   border: none;
 }
+
 form > button {
   width: 13.33vw;
   background: #3077c6;
@@ -161,13 +193,142 @@ form > button {
   color: white;
   font-weight: 500;
 }
+
 .wrapper_apps {
   margin-top: 8.33vw;
   width: 100%;
   display: flex;
   justify-content: center;
 }
+
 .apps > a > img {
   width: 9.375vw;
   height: 2.78vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  height: 569px;
+  background-color: #ffffff;
+}
+
+h2 {
+  margin-top: 120px;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container > hr {
+  margin-top: 20px;
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+}
+
+.wrapper {
+  margin-top: 82px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 104px;
+  margin-right: 104px;
+}
+
+.reviews,
+.booking,
+.communication,
+.support {
+  width: 296px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper_img {
+  width: 100px;
+  height: 100px;
+}
+
+.support > img {
+  width: 75px;
+  height: 92px;
+}
+
+.communication > img {
+  width: 83px;
+  height: 83px;
+}
+
+.booking > img {
+  width: 100px;
+  height: 67px;
+}
+
+.reviews > img {
+  width: 92px;
+  height: 83px;
+}
+
+footer {
+  width: 100%;
+  height: 630px;
+  background-color: #10367c;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_footer {
+  margin-top: 120px;
+  width: 100%;
+  height: 310px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about {
+  width: 193px;
+  height: 211px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.property_types {
+  width: 133px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about > a,
+b,
+.support_footer > a,
+b,
+.property_types > a,
+b {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.support_footer {
+  width: 233px;
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer > a {
+  margin-top: 64px;
+  margin-left: 103px;
+  color: #ffffff;
+  font-size: 14px;
 }
