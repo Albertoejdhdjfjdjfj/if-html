@@ -51,9 +51,6 @@ a {
   height: 2.1vw;
 }
 
-.account_after_breakpoint{
-  display: none;
-}
 .account {
   width: 2.78vw;
   height: 2.78vw;
@@ -62,7 +59,7 @@ a {
   display: none;
 }
 
-.account:hover{
+.night:hover,.account:hover{
   filter: brightness(0) saturate(100%) invert(88%) sepia(82%) saturate(6390%) hue-rotate(322deg) brightness(100%) contrast(92%); 
 }
 
