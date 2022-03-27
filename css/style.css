@@ -61,7 +61,7 @@ a {
   height: 2.78vw;
   display: none;
 }
-.account:hover{
+.night:hover,.account:hover{
   filter: invert(16%) sepia(100%) saturate(6087%) hue-rotate(2deg) brightness(115%) contrast(123%);  
 }
 
@@ -177,7 +177,7 @@ form > input {
 form > button {
   width: 13.33vw;
   background: #3077c6;
-  border-radius: 8px;
+  border-radius: 0.56vw;
   border: none;
   font-size: 1.667vw;
   color: white;
