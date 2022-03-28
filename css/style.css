@@ -137,7 +137,7 @@ form {
   display: flex;
   flex-direction: row;
   background-color: white;
-  border-radius:  0.56vw;
+  border-radius: 8px;
   margin-top: 1.67vw;
 }
 form>div{
@@ -146,19 +146,20 @@ form>div{
 }
 form > input {
   height: 4.4vw;
-  border-radius: 0.56vw;
+  border-radius: 8px;
   font-weight: 400;
   font-size: 1.25vw;
 }
 .city_input {
-  margin-left: 0.2vw;
   width: 32.4vw;
   border: none;
+  padding-left: 1.67vw;
 }
+
 .date_input {
   width: 18vw;
   border: none;
-  border-radius: 0.56vw;
+  border-radius: 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -167,17 +168,18 @@ form > input {
   width: 45%;
   border: none;
 }
-.date_input:hover {
+.num_people_input:hover,.city_input:hover,.date_input:hover {
   border: 0.2vw solid #f5bd41;
 }
 .num_people_input {
   width: 22vw;
   border: none;
+  padding-left: 2vw;
 }
 form > button {
   width: 13.33vw;
   background: #3077c6;
-  border-radius: 0.56vw;
+  border-radius: 8px;
   border: none;
   font-size: 1.667vw;
   color: white;
