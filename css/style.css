@@ -1,5 +1,7 @@
 @import url('fonts.css');
-
+:root{
+  --vw: calc(1/1440);
+}
 * {
   padding: 0;
   margin: 0;
@@ -137,7 +139,7 @@ form {
   display: flex;
   flex-direction: row;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 0.56vw;
   margin-top: 1.67vw;
 }
 form>div{
@@ -146,7 +148,7 @@ form>div{
 }
 form > input {
   height: 4.4vw;
-  border-radius: 8px;
+  border-radius: 0.56vw;
   font-weight: 400;
   font-size: 1.25vw;
 }
@@ -159,7 +161,7 @@ form > input {
 .date_input {
   width: 18vw;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.56vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -179,7 +181,7 @@ form > input {
 form > button {
   width: 13.33vw;
   background: #3077c6;
-  border-radius: 8px;
+  border-radius: 0.56vw;
   border: none;
   font-size: 1.667vw;
   color: white;
@@ -271,7 +273,7 @@ h2 {
 .homes_guests_loves{
   width: 100%;
   height: 57.5vw;
-  background-color: #E5E5E5;
+  background-color: #EAF0F9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,7 +292,7 @@ h2 {
   height: 30.2vw;
 }
 
-.button_arrow > img{
+.button_arrow_right > img{
   position: absolute;
   z-index: 2;
 }
@@ -314,15 +316,50 @@ h2 {
   color:#BFBFBF;
 }
 
-.button_arrow,.button_arrow>img{
+.button_arrow_right,.button_arrow_right>img{
   width: 2.78vw;
   height: 2.78vw;
   position: absolute;
 }
 
-.button_arrow{
+.button_arrow_right{
   margin-left: 84.4vw;
   margin-bottom: 7vw;
+}
+
+.the_best_destinations{
+  width: 100%;
+  height:66.5vw ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs{
+  margin-top: calc(82*var(--vw));
+  width: 85.5vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.wrapper_for_regions{
+  width: 85.5vw;
+  display: flex;
+ flex-direction: column;
+}
+
+.regions{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.region{
+  width: 20.6vw;
+  height: 24.3vw;
+}
+.region>a> img{
+   width: 100%;
 }
 
 footer {
@@ -603,7 +640,7 @@ form > button {
   width:43.33vw;
   height:43.33vw;
 }
-.button_arrow > img{
+.button_arrow_right > img{
   position: absolute;
   z-index: 2;
 }
@@ -620,13 +657,13 @@ form > button {
   font-size: 3.33vw;
 }
 
-.button_arrow,.button_arrow>img{
+.button_arrow_right,.button_arrow_right>img{
   width: 7.78vw;
   height: 7.78vw;
   position: absolute;
 }
 
-.button_arrow{
+.button_arrow_right{
   margin-left: 88vw;
   margin-bottom: 7vw;
 }
