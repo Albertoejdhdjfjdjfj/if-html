@@ -335,18 +335,40 @@ h2 {
   align-items: center;
 }
 
-.tabs{
-  margin-top: calc(82*var(--vw));
+.wrapper_for_tabs{
+  margin-top: 7.22vw;
   width: 85.5vw;
+  height: 4.44vw;
   display: flex;
   justify-content: flex-start;
 }
 
+.tabs{
+  background-color: #F3F3F4;
+  border-radius: 0.6vw; 
+}
+
+.regions_,.places_of_interest,.cities{
+  border-radius: 0.6vw;
+  width: 13.33vw;
+  font-size: 1.67vw;
+  border: none;
+  height: 4.44vw;
+}
+
+.places_of_interest{
+  border-radius: 0.6vw;
+  width: 16.52vw;
+  font-size: 1.67vw;
+  border: none;
+}
 
 .wrapper_for_regions{
   width: 85.5vw;
   display: flex;
  flex-direction: column;
+ align-items: center;
+ margin-top: 4.44vw;
 }
 
 .regions{
@@ -354,14 +376,79 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-.region{
+.region_before_breakpoint,.region{
   width: 20.6vw;
   height: 24.3vw;
 }
-.region>a> img{
+.region_before_breakpoint>a>img,.region>a> img{
    width: 100%;
 }
 
+.region_before_breakpoint > h3,.region>h3{
+  margin-top: 1.67vw;
+  font-size: 1.67vw;
+  color:#3077C6;
+  font-weight: 400;
+}
+
+.button_arrow_down{
+  margin-top: 3.37vw;
+  height: 2.78vw;
+  width: 2.78vw;
+}
+
+.button_arrow_down>img{
+  width: 100%;
+}
+.pop-up_window{
+  width: 85.56vw;
+  height: 13.9vw;
+  background-color: #EAF0F9;
+  display: flex;
+  flex-direction: row;
+}
+.user{
+  width: 5.97vw;
+  height: 13.9vw;
+  margin-left: 1.67vw;
+  display: flex;
+  align-items: center;
+}
+
+.user>img{
+  width: 100%;
+}
+
+.pop-up_window>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.67vw;
+}
+
+.pop-up_window>div>h4{
+    font-size: 1.67vw;
+    font-weight: 500;
+    margin-bottom: 1.45vw;
+}
+.pop-up_window>div>.button_to_window{
+  width: 8.89vw;
+  height: 3.33vw;
+  border: 0.07vw solid #3077c6;;
+  color: #3077c6;
+  border-radius: 0.56vw;
+}
+
+.pop-up_window>.exit{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 1.8vw;
+}
+
+.exit>img{
+  width: 100%;
+}
 footer {
   width: 100%;
   height: 43.75vw;
