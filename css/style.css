@@ -12,6 +12,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
+body>svg{
+  position: absolute;
+  z-index: -1;
+}
 
 .triphouse_site {
   width: 100%;
@@ -32,7 +36,7 @@ header {
   justify-content: space-between;
   margin-top: 3.54vw;
 }
-header > img {
+header > svg {
   height: 2.78vw;
   width: 14.24vw;
 }
@@ -191,7 +195,7 @@ form > button {
   display: flex;
   justify-content: center;
 }
-.apps > a > img {
+.apps > a > svg {
   width: 9.375vw;
   height: 2.78vw;
 }
@@ -251,19 +255,19 @@ h2 {
   width: 6.94vw;
   height: 6.94vw;
 }
-.support > img {
+.support > svg {
   width: 5.21vw;
   height: 6.37vw;
 }
-.communication > img {
+.communication > svg {
   width: 5.79vw;
   height: 5.79vw;
 }
-.booking > img {
+.booking > svg {
   width: 6.94vw;
   height: 4.63vw;
 }
-.reviews > img {
+.reviews > svg {
   width: 6.37vw;
   height: 5.78vw;
 }
