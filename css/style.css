@@ -419,19 +419,20 @@ h2 {
   width: 100%;
 }
 
-.pop-up_window>div{
+.pop-up_window>.sign_up{
+  width: 72vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 1.67vw;
 }
 
-.pop-up_window>div>h4{
+.pop-up_window>.sign_up>h4{
     font-size: 1.67vw;
     font-weight: 500;
     margin-bottom: 1.45vw;
 }
-.pop-up_window>div>.button_to_window{
+.pop-up_window>.sign_up>.button_to_window{
   width: 8.89vw;
   height: 3.33vw;
   border: 0.07vw solid #3077c6;;
@@ -448,6 +449,7 @@ h2 {
 
 .exit>img{
   width: 100%;
+  margin-top: 24px;
 }
 footer {
   width: 100%;
@@ -655,6 +657,10 @@ form > button {
   .communication > a,
   .support > a {
     font-size: 4.17vw;
+  }
+  
+  .region_before_breakpoint{
+    display: none;
   }
   footer {
     width: 100%;
