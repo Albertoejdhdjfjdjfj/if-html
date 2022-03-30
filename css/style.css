@@ -345,7 +345,7 @@ footer > a {
     height: 13.333vw;
     margin-top: 0;
  }
- header > img {
+ header > svg {
   height: 6.67vw;
   width: 33.87vw;
 }
@@ -443,7 +443,7 @@ form > button {
   height: 11.1111vw;
   margin-top: 8.89vw;
 }
-.apps > a > img {
+.apps > a > svg {
   width: 37.5vw;
   height: 11.1111vw;
 }
@@ -503,19 +503,19 @@ form > button {
     align-items: center;
   }
  
-  .support > img {
+  .support > svg {
     width: 14.58vw;
     height: 17.825vw;
   }
-  .communication > img {
+  .communication > svg {
     width: 16.2vw;
     height: 16.2vw;
   }
-  .booking > img {
+  .booking > svg {
     width: 19.44vw;
     height: 12.96vw;
   }
-  .reviews > img {
+  .reviews > svg {
     width: 17.825vw;
     height: 16.2vw;
   }
