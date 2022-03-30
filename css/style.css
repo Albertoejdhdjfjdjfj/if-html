@@ -4,18 +4,201 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
+  text-decoration: none;
 }
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.triphouse_site {
+  width: 100%;
+  height: 62.5vw;
+  background: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 85.6vw;
+  height: 3.19vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.54vw;
+}
+header > img {
+  height: 2.78vw;
+  width: 14.24vw;
+}
+.wrapper_nav {
+  display: flex;
+  align-items: center;
+}
+.wrapper_nav,
 a {
-  font-family: "Roboto";
+  color: white;
+  font-size: 1.667vw;
+}
+.night {
+  margin-right: 1.667vw;
+  width: 2.1vw;
+  height: 2.1vw;
+}
+
+.account {
+  width: 2.78vw;
+  height: 2.78vw;
+}
+.menu{
+  display: none;
+}
+
+.night:hover,.account:hover{
+  filter: brightness(0) saturate(100%) invert(88%) sepia(82%) saturate(6390%) hue-rotate(322deg) brightness(100%) contrast(92%); 
+}
+
+.attractions {
+  margin-right: 3.33vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.attractions > hr{
+  display: none;
+}
+.attractions:hover > hr {
+  display: inline-block;
+  margin-top: 2.43vw;
+  position: absolute;
+  width: 6.47vw;
+  height: 2px;
+  background-color: #f5bd41;
+  border: none;
+}
+.stays {
+  margin-right: 1.667vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stays > hr{
+  display: none;
+}
+.stays:hover > hr {
+  border: none;
+  display: inline-block;
+  margin-top: 2.43vw;
+  position: absolute;
+  width: 3.47vw;
+  height: 2px;
+  background-color: #f5bd41;
+}
+.page {
+  width: 85.6vw;
+  height: 33.8vw;
+  margin-top: 14vw;
+  display: flex;
+  flex-direction: column;
+}
+.label_form {
+  margin-top: 6.94vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.label_city_input {
+  font-size: 1.25vw;
+  margin-left: 1.67vw;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+.label_num_people_input {
+  font-size: 1.25vw;
+  margin-left: 15.35vw;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+h1 {
+  width: 37.6vw;
+  font-size: 3.47vw;
+  font-weight: 500;
+  color: white;
+}
+form {
+  width: 85vw;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 0.56vw;
+  margin-top: 1.67vw;
+}
+form>div{
+  display: flex;
+  align-items: center;
+}
+form > input {
+  height: 4.4vw;
+  border-radius: 0.56vw;
+  font-weight: 400;
+  font-size: 1.25vw;
+}
+.city_input {
+  width: 32.4vw;
+  border: none;
+  padding-left: 1.67vw;
+}
+
+.date_input {
+  width: 18vw;
+  border: none;
+  border-radius: 0.56vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.date_input>input{
+  width: 45%;
+  border: none;
+}
+.num_people_input:hover,.city_input:hover,.date_input:hover {
+  border: 0.2vw solid #f5bd41;
+}
+.num_people_input {
+  width: 22vw;
+  border: none;
+  padding-left: 2vw;
+}
+form > button {
+  width: 13.33vw;
+  background: #3077c6;
+  border-radius: 0.56vw;
+  border: none;
+  font-size: 1.667vw;
+  color: white;
+  font-weight: 500;
+}
+.wrapper_apps {
+  margin-top: 8.33vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.apps > a > img {
+  width: 9.375vw;
+  height: 2.78vw;
+}
+a {
   font-weight: 400;
 }
 b {
-  font-family: "Roboto";
   font-weight: 500;
 }
 .container {
@@ -30,7 +213,6 @@ h2 {
   margin-top: 8.33vw;
   font-size: 2.78vw;
   font-weight: 500;
-  font-family: "Roboto";
   text-align: center;
 }
 .container > hr {
@@ -63,6 +245,7 @@ h2 {
 .communication > a,
 .support > a {
   font-size: 1.67vw;
+  color:black;
 }
 .wrapper_img {
   width: 6.94vw;
@@ -147,7 +330,120 @@ footer > a {
   font-size: 0.97vw;
 }
 
+
 @media (max-width: 360px) {
+  .triphouse_site{
+    width: 100%;
+    height: 148vw;
+  }
+  header{
+    width: 91%;
+    height: 13.333vw;
+    margin-top: 0;
+ }
+ header > img {
+  height: 6.67vw;
+  width: 33.87vw;
+}
+.night {
+  margin-right: 4.44vw;
+  width: 4.44vw;
+  height: 4.44vw;
+}
+.account {
+  width: 6.66vw;
+  height: 6.66vw;
+  margin-right: 4.44vw;
+}
+.attractions {
+  display: none;
+}
+.stays {
+  display: none;
+}
+.menu{
+  display: block;
+  width: 6.667vw;
+  height: 4.44vw;
+}
+.page {
+  width: 91%;
+  height: 112.5vw;
+  margin-top: 14.44vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page>h1{
+  font-size: 8.33vw;
+  width: 100%;
+}
+.label_form{
+  display: none;
+}
+form{
+  margin-top: 8.61vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 91vw;
+  height: 65vw;
+  background-color: #f5bd41;
+  border-radius: 0;
+}
+.city_input {
+  width: 86.7vw;
+  height: 13.33vw;
+  margin-left: 0;
+  border-radius: 1.11vw;
+  font-size: 4.17vw;
+  text-align: center;
+}
+.date_input {
+  width: 86.7vw;
+  height: 13.33vw;
+  font-size: 4.17vw;
+  justify-content: space-between;
+  text-align: center;
+}
+.date_input>input{
+  width: 49%;
+  height: 13.33vw ;
+  border-radius: 1.11vw;
+  text-align: center;
+}
+.date_input>div{
+  display: none;
+}
+.num_people_input {
+  width: 86.7vw;
+  height: 13.33vw;
+  border-radius: 1.11vw;
+  font-size: 4.17vw;
+  border-radius: 1.11vw;
+  text-align: center;
+}
+form > button {
+  width: 86.7vw;
+  height: 13.33vw;
+  background: #3077c6;
+  border-radius: 1.11vw;
+  font-size: 1.667vw;
+  color: white;
+  font-weight: 500;
+  font-size: 4.17vw;
+  margin-top:2.2222vw ;
+}
+.wraper-apps{
+  height: 11.1111vw;
+  margin-top: 8.89vw;
+}
+.apps > a > img {
+  width: 37.5vw;
+  height: 11.1111vw;
+}
+
   .container {
     display: flex;
     flex-direction: column;
@@ -160,7 +456,6 @@ footer > a {
     margin-top: 6.67vw;
     font-size: 11.11vw;
     font-weight: 500;
-    font-family: "Roboto";
     text-align: center;
   }
   hr {
@@ -203,6 +498,7 @@ footer > a {
     justify-content: space-between;
     align-items: center;
   }
+ 
   .support > img {
     width: 14.58vw;
     height: 17.825vw;
@@ -266,4 +562,5 @@ footer > a {
     margin: 0;
     margin-top: 8.89vw;
   }
+  
 }
