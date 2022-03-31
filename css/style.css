@@ -1,7 +1,5 @@
 @import url('fonts.css');
-:root{
-  --vw: calc(1/1440);
-}
+
 * {
   padding: 0;
   margin: 0;
@@ -354,13 +352,15 @@ h2 {
   font-size: 1.67vw;
   border: none;
   height: 4.44vw;
+  background-color: #F3F3F4;
 }
 
+.regions_:active,.places_of_interest:active,.cities:active{
+  background-color: #10367c;
+}
+ 
 .places_of_interest{
-  border-radius: 0.6vw;
   width: 16.52vw;
-  font-size: 1.67vw;
-  border: none;
 }
 
 .wrapper_for_regions{
@@ -368,7 +368,7 @@ h2 {
   display: flex;
  flex-direction: column;
  align-items: center;
- margin-top: 4.44vw;
+ margin-top: 8.1vw;
 }
 
 .regions{
@@ -432,25 +432,34 @@ h2 {
     font-weight: 500;
     margin-bottom: 1.45vw;
 }
-.pop-up_window>.sign_up>.button_to_window{
+.button_to_window{
   width: 8.89vw;
   height: 3.33vw;
   border: 0.07vw solid #3077c6;;
   color: #3077c6;
   border-radius: 0.56vw;
+  font-size: 1.25vw;
 }
 
 .pop-up_window>.exit{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 1.8vw;
+  width: 2vw;
 }
 
-.exit>img{
-  width: 100%;
+.exit_button{
+  width: 1.8vw;
+  height: 1.8vw;
   margin-top: 24px;
+  border: none;
+  background-color: #EAF0F9;
 }
+
+.exit_button>img{
+  width: 100%;
+}
+
 footer {
   width: 100%;
   height: 43.75vw;
@@ -458,9 +467,11 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .logo {
   display: none;
 }
+
 .content_footer {
   margin-top: 8.33vw;
   width: 100%;
@@ -468,6 +479,7 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+
 .about {
   width: 13.4vw;
   height: 14.65vw;
@@ -475,6 +487,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .about > a,
 b {
   color: #ffffff;
@@ -662,6 +675,62 @@ form > button {
   .region_before_breakpoint{
     display: none;
   }
+
+  .the_best_destinations{
+    height: 105.28vw;
+  }
+
+  .wrapper_for_tabs{
+    margin-top: 8.89vw;
+    width: 100%;
+    height: 8.89vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tabs{
+    width: 91.3vw;
+    background-color: #F3F3F4;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .regions_,.places_of_interest,.cities{
+    border-radius: 0.6vw;
+    width: 30%;
+    font-size: 5.28vw;
+    height: 8.89vw;
+    background-color: #F3F3F4;
+  }
+
+  .places_of_interest{
+    border-radius: 0.6vw;
+    width: 30%;
+  }
+
+  .places_of_interest>span{
+    display: none;
+  }
+
+  .wrapper_for_regions{
+    width: 91.3vw;
+    margin-top: 4.44vw;
+  }
+
+  .region{
+    width: 43vw;
+    height: 97.2vw;
+  }
+  
+  .region>h3{
+    margin-top: 2.22vw;
+    font-size: 3.33vw;
+  }
+
+  .pop-up_window{
+    display: none;
+  }
+
   footer {
     width: 100%;
     height: 56.39vw;
