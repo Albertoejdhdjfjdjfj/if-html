@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: "Roboto";
   text-decoration: none;
-  background-repeat: no-repeat;
 }
 
 body {
@@ -34,7 +33,6 @@ header {
   width: 85.6vw;
   height: 3.19vw;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-top: 3.54vw;
@@ -128,7 +126,6 @@ a {
 .label_form {
   margin-top: 6.94vw;
   display: flex;
-  flex-direction: row;
   justify-content: start;
 }
 
@@ -158,7 +155,6 @@ h1 {
 form {
   width: 85vw;
   display: flex;
-  flex-direction: row;
   background-color: white;
   border-radius: 0.56vw;
   margin-top: 1.67vw;
@@ -187,7 +183,6 @@ form > input {
   border: none;
   border-radius: 0.56vw;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -262,7 +257,6 @@ h2 {
 .wrapper {
   margin-top: 5.694vw;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin-left: 7.22vw;
   margin-right: 7.22vw;
