@@ -5,12 +5,20 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto";
+  text-decoration: none;
 }
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+body>svg{
+  position: absolute;
+  z-index: -1;
+}
+
 
 .triphouse_site {
   width: 100%;
@@ -31,7 +39,7 @@ header {
   justify-content: space-between;
   margin-top: 3.54vw;
 }
-header > img {
+header > svg {
   height: 2.78vw;
   width: 14.24vw;
 }
@@ -185,16 +193,19 @@ form > button {
   color: white;
   font-weight: 500;
 }
+
 .wrapper_apps {
   margin-top: 8.33vw;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.apps > a > img {
+
+.apps > a > svg {
   width: 9.375vw;
   height: 2.78vw;
 }
+
 a {
   font-weight: 400;
   text-decoration: none;
@@ -252,19 +263,19 @@ h2 {
   width: 6.94vw;
   height: 6.94vw;
 }
-.support > img {
+.support > svg {
   width: 5.21vw;
   height: 6.37vw;
 }
-.communication > img {
+.communication > svg {
   width: 5.79vw;
   height: 5.79vw;
 }
-.booking > img {
+.booking > svg {
   width: 6.94vw;
   height: 4.63vw;
 }
-.reviews > img {
+.reviews > svg {
   width: 6.37vw;
   height: 5.78vw;
 }
@@ -290,7 +301,7 @@ h2 {
   height: 30.2vw;
 }
 
-.button_arrow_right > img{
+.button_arrow_right > svg {
   position: absolute;
   z-index: 2;
 }
@@ -380,7 +391,7 @@ h2 {
   width: 20.6vw;
   height: 24.3vw;
 }
-.region_before_breakpoint>a>img,.region>a> img{
+.region_before_breakpoint>a>img,.region>a>img {
    width: 100%;
 }
 
@@ -391,10 +402,17 @@ h2 {
   font-weight: 400;
 }
 
-.button_arrow_down{
-  margin-top: 3.37vw;
+.button_arrow_down,svg{
   height: 2.78vw;
   width: 2.78vw;
+}
+
+.regions > .button_arrow_right{
+  display: none;
+}
+
+.button_arrow_down{
+  margin-top: 4.6vw;
 }
 
 .button_arrow_down>svg{
@@ -451,12 +469,12 @@ h2 {
 .exit_button{
   width: 1.8vw;
   height: 1.8vw;
-  margin-top: 24px;
+  margin-top: 1.67vw;
   border: none;
   background-color: #EAF0F9;
 }
 
-.exit_button>img{
+.exit_button>svg{
   width: 100%;
 }
 
@@ -539,7 +557,7 @@ footer > a {
     height: 13.333vw;
     margin-top: 0;
  }
- header > img {
+ header > svg {
   height: 6.67vw;
   width: 33.87vw;
 }
@@ -637,7 +655,7 @@ form > button {
   height: 11.1111vw;
   margin-top: 8.89vw;
 }
-.apps > a > img {
+.apps > a > svg {
   width: 37.5vw;
   height: 11.1111vw;
 }
@@ -676,9 +694,20 @@ form > button {
     display: none;
   }
 
+  .button_arrow_right,.button_arrow_right>svg{
+    width: 7.78vw;
+    height: 7.78vw;
+    position: absolute;
+  }
+  
+   .button_arrow_right{
+    margin-left: 88vw;
+    margin-bottom: 7vw;
+  }
+
   .the_best_destinations{
     height: 105.28vw;
-  }
+  } 
 
   .wrapper_for_tabs{
     margin-top: 8.89vw;
@@ -717,6 +746,19 @@ form > button {
     margin-top: 4.44vw;
   }
 
+  .regions .region{
+    height: 49.4vw;
+  }
+
+  .regions > .button_arrow_down{
+    display: none;
+  }
+
+  .regions > .button_arrow_right{
+    display: block;
+    margin-top: 19vw;
+  }
+
   .region{
     width: 43vw;
     height: 97.2vw;
@@ -725,6 +767,11 @@ form > button {
   .region>h3{
     margin-top: 2.22vw;
     font-size: 3.33vw;
+  }
+
+  .button_arrow_down,svg{
+    height: 2.78vw;
+    width: 2.78vw;
   }
 
   .pop-up_window{
@@ -757,23 +804,22 @@ form > button {
     align-items: center;
   }
  
-  .support > img {
+  .support > svg {
     width: 14.58vw;
     height: 17.825vw;
   }
-  .communication > img {
+  .communication > svg {
     width: 16.2vw;
     height: 16.2vw;
   }
-  .booking > img {
+  .booking > svg {
     width: 19.44vw;
     height: 12.96vw;
   }
-  .reviews > img {
+  .reviews > svg {
     width: 17.825vw;
     height: 16.2vw;
   }
-/* ------------------------------------------------------------- */
 
 .homes_guests_loves{
   width: 100%;
@@ -802,10 +848,7 @@ form > button {
   width:43.33vw;
   height:43.33vw;
 }
-.button_arrow_right > img{
-  position: absolute;
-  z-index: 2;
-}
+
 .object_before_breakpoint{
   display: none;
 }
@@ -817,17 +860,6 @@ form > button {
 .object>p{
   margin-top: 1.11vw;
   font-size: 3.33vw;
-}
-
-.button_arrow_right,.button_arrow_right>img{
-  width: 7.78vw;
-  height: 7.78vw;
-  position: absolute;
-}
-
-.button_arrow_right{
-  margin-left: 88vw;
-  margin-bottom: 7vw;
 }
 
   .content_footer {
@@ -879,3 +911,5 @@ form > button {
   }
   
 }
+
+
