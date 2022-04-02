@@ -314,7 +314,7 @@ h2 {
   color:#BFBFBF;
 }
 
-.button_arrow_right,.button_arrow_right>img{
+.button_arrow_right,.button_arrow_right>svg{
   width: 2.78vw;
   height: 2.78vw;
   position: absolute;
@@ -397,7 +397,7 @@ h2 {
   width: 2.78vw;
 }
 
-.button_arrow_down>img{
+.button_arrow_down>svg{
   width: 100%;
 }
 .pop-up_window{
