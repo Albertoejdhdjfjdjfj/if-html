@@ -39,6 +39,7 @@ header {
 
 header > svg {
   height: 2.78vw;
+  width: 16vw;
 }
 
 .wrapper_nav {
