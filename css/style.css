@@ -30,7 +30,6 @@ body>svg{
 }
 
 header {
-  width: 85.6vw;
   height: 3.19vw;
   display: flex;
   align-items: center;
@@ -40,12 +39,12 @@ header {
 
 header > svg {
   height: 2.78vw;
-  width: 14.24vw;
 }
 
 .wrapper_nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .wrapper_nav,
@@ -116,7 +115,6 @@ a {
 }
 
 .page {
-  width: 85.6vw;
   height: 33.8vw;
   margin-top: 14vw;
   display: flex;
@@ -153,7 +151,6 @@ h1 {
 }
 
 form {
-  width: 85vw;
   display: flex;
   background-color: white;
   border-radius: 0.56vw;
@@ -213,7 +210,6 @@ form > button {
 
 .wrapper_apps {
   margin-top: 8.33vw;
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -312,6 +308,7 @@ footer {
   background-color: #10367c;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .logo {
@@ -320,10 +317,9 @@ footer {
 
 .content_footer {
   margin-top: 8.33vw;
-  width: 100%;
   height: 21.53vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .about {
@@ -373,7 +369,6 @@ b {
 
 footer > a {
   margin-top: 4.44vw;
-  margin-left: 7.15vw;
   color: #ffffff;
   font-size: 0.97vw;
 }
@@ -445,23 +440,24 @@ form{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 91vw;
-  height: 65vw;
+  height: 66vw;
   background-color: #f5bd41;
   border-radius: 0;
+  border: 0.83vw solid #f5bd41;
 }
 
 .city_input {
-  width: 86.7vw;
+  width: 84vw;
   height: 13.33vw;
   margin-left: 0;
   border-radius: 1.11vw;
   font-size: 4.17vw;
   text-align: center;
+  border: 0.83vw solid #f5bd41;
 }
 
 .date_input {
-  width: 86.7vw;
+  width: 84vw;
   height: 13.33vw;
   font-size: 4.17vw;
   justify-content: space-between;
@@ -473,6 +469,7 @@ form{
   height: 13.33vw  ;
   border-radius: 1.11vw;
   text-align: center;
+  border: 0.83vw solid #f5bd41;
 }
 
 .date_input>div {
@@ -480,16 +477,17 @@ form{
 }
 
 .num_people_input {
-  width: 86.7vw;
+  width: 84vw;
   height: 13.33vw;
   border-radius: 1.11vw;
   font-size: 4.17vw;
   border-radius: 1.11vw;
   text-align: center;
+  border: 0.83vw solid #f5bd41;
 }
 
 form > button {
-  width: 86.7vw;
+  width: 84vw;
   height: 13.33vw;
   background: #3077c6;
   border-radius: 1.11vw;
@@ -498,6 +496,7 @@ form > button {
   font-weight: 500;
   font-size: 4.17vw;
   margin-top:2.2222vw ;
+  border: 0.83vw solid #f5bd41;
 }
 
 .wraper-apps{
@@ -647,6 +646,61 @@ form > button {
     font-size: 3.333vw;
     margin: 0;
     margin-top: 8.89vw;
+    text-align: center;
   }
   
 }
+
+.col-1{
+   width: 7.15vw;
+}
+
+.col-2{
+  width: 14.3vw;
+}
+
+.col-3{
+  width: 21.5vw;
+}
+
+.col-4{
+  width: 28.6vw;
+}
+
+.col-5{
+  width: 35.8vw;
+}
+
+.col-6{
+  width: 43vw;
+}
+
+.col-7{
+  width: 50vw;
+}
+
+.col-8{
+  width: 57vw;
+}
+
+.col-9{
+  width: 64vw;
+}
+
+.col-10{
+  width: 71vw;
+}
+
+.col-11{
+  width: 78vw;
+}
+
+.col-12{
+  width: 85vw;
+}
+
+
+
+
+
+
