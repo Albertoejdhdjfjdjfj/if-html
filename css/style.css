@@ -23,6 +23,7 @@ body>svg{
   width: 100%;
   height: 62.5vw;
   background: url(../img/background.png);
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -30,8 +31,10 @@ body>svg{
 }
 
 header {
+  width: 85.6vw;
   height: 3.19vw;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-top: 3.54vw;
@@ -39,13 +42,12 @@ header {
 
 header > svg {
   height: 2.78vw;
-  width: 16vw;
+  width: 14.24vw;
 }
 
 .wrapper_nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
 .wrapper_nav,
@@ -69,8 +71,14 @@ a {
   display: none;
 }
 
+.account_hover{
+  width: 2.78vw;
+  height: 2.78vw;
+  display: none;
+}
+
 .night:hover,.account:hover{
-  filter: brightness(0) saturate(100%) invert(88%) sepia(82%) saturate(6390%) hue-rotate(322deg) brightness(100%) contrast(92%); 
+  filter: invert(16%) sepia(100%) saturate(6087%) hue-rotate(2deg) brightness(115%) contrast(123%);  
 }
 
 .attractions {
@@ -89,9 +97,8 @@ a {
   margin-top: 2.43vw;
   position: absolute;
   width: 6.47vw;
-  height: 2px;
+  height: 1px;
   background-color: #f5bd41;
-  border: none;
 }
 
 .stays {
@@ -100,22 +107,21 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
 .stays > hr{
   display: none;
 }
 
 .stays:hover > hr {
-  border: none;
   display: inline-block;
   margin-top: 2.43vw;
   position: absolute;
   width: 3.47vw;
-  height: 2px;
+  height: 1px;
   background-color: #f5bd41;
 }
 
 .page {
+  width: 85.6vw;
   height: 33.8vw;
   margin-top: 14vw;
   display: flex;
@@ -125,6 +131,7 @@ a {
 .label_form {
   margin-top: 6.94vw;
   display: flex;
+  flex-direction: row;
   justify-content: start;
 }
 
@@ -152,7 +159,9 @@ h1 {
 }
 
 form {
+  width: 85vw;
   display: flex;
+  flex-direction: row;
   background-color: white;
   border-radius: 0.56vw;
   margin-top: 1.67vw;
@@ -181,6 +190,7 @@ form > input {
   border: none;
   border-radius: 0.56vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -211,6 +221,7 @@ form > button {
 
 .wrapper_apps {
   margin-top: 8.33vw;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -222,6 +233,7 @@ form > button {
 
 a {
   font-weight: 400;
+  text-decoration: none;
 }
 
 b {
@@ -254,6 +266,7 @@ h2 {
 .wrapper {
   margin-top: 5.694vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-left: 7.22vw;
   margin-right: 7.22vw;
@@ -288,6 +301,7 @@ h2 {
   width: 5.21vw;
   height: 6.37vw;
 }
+
 .communication > svg {
   width: 5.79vw;
   height: 5.79vw;
@@ -303,13 +317,69 @@ h2 {
   height: 5.78vw;
 }
 
+.homes_guests_loves{
+  width: 100%;
+  height: 57.5vw;
+  background-color: #EAF0F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper_for_category{
+  width: 85.6vw;
+  height: 57.5vw;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+}
+
+.object_before_breakpoint,.object{
+  width:20.6vw;
+  height: 30.2vw;
+}
+
+.button_arrow_right > svg {
+  position: absolute;
+  z-index: 2;
+}
+
+.object>a>img,.object_before_breakpoint>a>img{
+  width: 20.6vw;
+  width: 20.6vw;
+}
+
+.object>h3,.object_before_breakpoint>h3{
+  margin-top: 1.67vw;
+  color: #3077c6;
+  font-size: 1.67vw;
+  font-weight: 400;
+}
+
+.object>p,.object_before_breakpoint>p{
+  margin-top: 1.67vw;
+  font-size: 1.67vw;
+  font-weight: 400;
+  color:#BFBFBF;
+}
+
+.button_arrow_right,.button_arrow_right>svg{
+  width: 2.78vw;
+  height: 2.78vw;
+  position: absolute;
+}
+
+.button_arrow_right{
+  margin-left: 84.4vw;
+  margin-bottom: 7vw;
+}
+
 footer {
   width: 100%;
   height: 43.75vw;
   background-color: #10367c;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .logo {
@@ -318,9 +388,10 @@ footer {
 
 .content_footer {
   margin-top: 8.33vw;
+  width: 100%;
   height: 21.53vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .about {
@@ -366,19 +437,22 @@ b {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.39vw;
-} 
+}
 
 footer > a {
   margin-top: 4.44vw;
+  margin-left: 7.15vw;
   color: #ffffff;
   font-size: 0.97vw;
 }
 
+
 @media (max-width: 360px) {
+  
   .triphouse_site{
     width: 100%;
     height: 148vw;
-  } 
+  }
 
   header{
     width: 91%;
@@ -441,24 +515,23 @@ form{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 66vw;
+  width: 91vw;
+  height: 65vw;
   background-color: #f5bd41;
   border-radius: 0;
-  border: 0.83vw solid #f5bd41;
 }
 
 .city_input {
-  width: 84vw;
+  width: 86.7vw;
   height: 13.33vw;
   margin-left: 0;
   border-radius: 1.11vw;
   font-size: 4.17vw;
   text-align: center;
-  border: 0.83vw solid #f5bd41;
 }
 
 .date_input {
-  width: 84vw;
+  width: 86.7vw;
   height: 13.33vw;
   font-size: 4.17vw;
   justify-content: space-between;
@@ -467,28 +540,26 @@ form{
 
 .date_input>input{
   width: 49%;
-  height: 13.33vw  ;
+  height: 13.33vw ;
   border-radius: 1.11vw;
   text-align: center;
-  border: 0.83vw solid #f5bd41;
 }
 
-.date_input>div {
+.date_input>div{
   display: none;
 }
 
 .num_people_input {
-  width: 84vw;
+  width: 86.7vw;
   height: 13.33vw;
   border-radius: 1.11vw;
   font-size: 4.17vw;
   border-radius: 1.11vw;
   text-align: center;
-  border: 0.83vw solid #f5bd41;
 }
 
 form > button {
-  width: 84vw;
+  width: 86.7vw;
   height: 13.33vw;
   background: #3077c6;
   border-radius: 1.11vw;
@@ -497,7 +568,6 @@ form > button {
   font-weight: 500;
   font-size: 4.17vw;
   margin-top:2.2222vw ;
-  border: 0.83vw solid #f5bd41;
 }
 
 .wraper-apps{
@@ -510,7 +580,6 @@ form > button {
   height: 11.1111vw;
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
@@ -521,10 +590,10 @@ form > button {
   }
 
   h2 {
-    margin-top: 6.67vw;
-    font-size: 11.11vw;
-    font-weight: 500;
+    margin-top: 11.11vw;
+    font-size: 7.78vw;
     text-align: center;
+    color: #383838;
   }
 
   hr {
@@ -543,6 +612,21 @@ form > button {
   .communication > a,
   .support > a {
     font-size: 4.17vw;
+  }
+  
+  .region_before_breakpoint{
+    display: none;
+  }
+
+  .button_arrow_right,.button_arrow_right>svg{
+    width: 7.78vw;
+    height: 7.78vw;
+    position: absolute;
+  }
+  
+   .button_arrow_right{
+    margin-left: 88vw;
+    margin-bottom: 7vw;
   }
 
   footer {
@@ -572,8 +656,8 @@ form > button {
     justify-content: space-between;
     align-items: center;
   }
-
- .support > svg {
+ 
+  .support > svg {
     width: 14.58vw;
     height: 17.825vw;
   }
@@ -592,6 +676,48 @@ form > button {
     width: 17.825vw;
     height: 16.2vw;
   }
+
+.homes_guests_loves{
+  width: 100%;
+  height: 98.33vw;
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper_for_category{
+  margin-top: 8.88vw;
+  width: 91.67vw;
+  height: 53.6vw;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+}
+
+.object{
+  width:43.33vw;
+  height: 53.6vw;
+}
+
+.object>a>img{
+  width:43.33vw;
+  height:43.33vw;
+}
+
+.object_before_breakpoint{
+  display: none;
+}
+
+.object>h3{
+  margin-top: 2.22vw;
+  font-size: 3.33vw;
+}
+
+.object>p{
+  margin-top: 1.11vw;
+  font-size: 3.33vw;
+}
 
   .content_footer {
     margin-top: 11.11vw;
@@ -642,66 +768,13 @@ form > button {
   .support_footer > a {
     display: none;
   }
-
+  
   footer > a {
     font-size: 3.333vw;
     margin: 0;
     margin-top: 8.89vw;
-    text-align: center;
   }
   
 }
-
-.col-1{
-   width: 7.15vw;
-}
-
-.col-2{
-  width: 14.3vw;
-}
-
-.col-3{
-  width: 21.5vw;
-}
-
-.col-4{
-  width: 28.6vw;
-}
-
-.col-5{
-  width: 35.8vw;
-}
-
-.col-6{
-  width: 43vw;
-}
-
-.col-7{
-  width: 50vw;
-}
-
-.col-8{
-  width: 57vw;
-}
-
-.col-9{
-  width: 64vw;
-}
-
-.col-10{
-  width: 71vw;
-}
-
-.col-11{
-  width: 78vw;
-}
-
-.col-12{
-  width: 85vw;
-}
-
-
-
-
 
 
