@@ -19,58 +19,58 @@ body>svg{
   z-index: -1;
 }
 
+
 .triphouse_site {
   width: 100%;
   height: 62.5vw;
   background: url(../img/background.png);
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 header {
+  width: 85.6vw;
   height: 3.19vw;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-top: 3.54vw;
 }
-
 header > svg {
   height: 2.78vw;
-  width: 16vw;
+  width: 14.24vw;
 }
-
 .wrapper_nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
-
 .wrapper_nav,
 a {
   color: white;
   font-size: 1.667vw;
 }
-
 .night {
   margin-right: 1.667vw;
   width: 2.1vw;
   height: 2.1vw;
 }
-
 .account {
   width: 2.78vw;
   height: 2.78vw;
 }
-
 .menu{
   display: none;
 }
-
+.account_hover{
+  width: 2.78vw;
+  height: 2.78vw;
+  display: none;
+}
 .night:hover,.account:hover{
-  filter: brightness(0) saturate(100%) invert(88%) sepia(82%) saturate(6390%) hue-rotate(322deg) brightness(100%) contrast(92%); 
+  filter: invert(16%) sepia(100%) saturate(6087%) hue-rotate(2deg) brightness(115%) contrast(123%);  
 }
 
 .attractions {
@@ -79,55 +79,47 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
 .attractions > hr{
   display: none;
 }
-
 .attractions:hover > hr {
   display: inline-block;
   margin-top: 2.43vw;
   position: absolute;
   width: 6.47vw;
-  height: 2px;
+  height: 1px;
   background-color: #f5bd41;
-  border: none;
 }
-
 .stays {
   margin-right: 1.667vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .stays > hr{
   display: none;
 }
-
 .stays:hover > hr {
-  border: none;
   display: inline-block;
   margin-top: 2.43vw;
   position: absolute;
   width: 3.47vw;
-  height: 2px;
+  height: 1px;
   background-color: #f5bd41;
 }
-
 .page {
+  width: 85.6vw;
   height: 33.8vw;
   margin-top: 14vw;
   display: flex;
   flex-direction: column;
 }
-
 .label_form {
   margin-top: 6.94vw;
   display: flex;
+  flex-direction: row;
   justify-content: start;
 }
-
 .label_city_input {
   font-size: 1.25vw;
   margin-left: 1.67vw;
@@ -135,7 +127,6 @@ a {
   font-weight: 400;
   text-decoration: none;
 }
-
 .label_num_people_input {
   font-size: 1.25vw;
   margin-left: 15.35vw;
@@ -143,33 +134,30 @@ a {
   font-weight: 400;
   text-decoration: none;
 }
-
 h1 {
   width: 37.6vw;
   font-size: 3.47vw;
   font-weight: 500;
   color: white;
 }
-
 form {
+  width: 85vw;
   display: flex;
+  flex-direction: row;
   background-color: white;
   border-radius: 0.56vw;
   margin-top: 1.67vw;
 }
-
 form>div{
   display: flex;
   align-items: center;
 }
-
 form > input {
   height: 4.4vw;
   border-radius: 0.56vw;
   font-weight: 400;
   font-size: 1.25vw;
 }
-
 .city_input {
   width: 32.4vw;
   border: none;
@@ -181,24 +169,21 @@ form > input {
   border: none;
   border-radius: 0.56vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
-
 .date_input>input{
   width: 45%;
   border: none;
 }
-
 .num_people_input:hover,.city_input:hover,.date_input:hover {
   border: 0.2vw solid #f5bd41;
 }
-
 .num_people_input {
   width: 22vw;
   border: none;
   padding-left: 2vw;
 }
-
 form > button {
   width: 13.33vw;
   background: #3077c6;
@@ -211,6 +196,7 @@ form > button {
 
 .wrapper_apps {
   margin-top: 8.33vw;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -222,12 +208,11 @@ form > button {
 
 a {
   font-weight: 400;
+  text-decoration: none;
 }
-
 b {
   font-weight: 500;
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -236,29 +221,26 @@ b {
   height: 39.5vw;
   background-color: #ffffff;
 }
-
 h2 {
   margin-top: 8.33vw;
   font-size: 2.78vw;
   font-weight: 500;
   text-align: center;
 }
-
 .container > hr {
   margin-top: 1.39vw;
   width: 6.94vw;
   height: 0.278vw;
   background-color: #f5bd41;
 }
-
 .wrapper {
   margin-top: 5.694vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-left: 7.22vw;
   margin-right: 7.22vw;
 }
-
 .reviews,
 .booking,
 .communication,
@@ -270,7 +252,6 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
-
 .reviews > a,
 .booking > a,
 .communication > a,
@@ -278,12 +259,10 @@ h2 {
   font-size: 1.67vw;
   color:black;
 }
-
 .wrapper_img {
   width: 6.94vw;
   height: 6.94vw;
 }
-
 .support > svg {
   width: 5.21vw;
   height: 6.37vw;
@@ -292,15 +271,69 @@ h2 {
   width: 5.79vw;
   height: 5.79vw;
 }
-
 .booking > svg {
   width: 6.94vw;
   height: 4.63vw;
 }
-
 .reviews > svg {
   width: 6.37vw;
   height: 5.78vw;
+}
+.homes_guests_loves{
+  width: 100%;
+  height: 57.5vw;
+  background-color: #EAF0F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper_for_category{
+  width: 85.6vw;
+  height: 57.5vw;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+}
+
+.object_before_breakpoint,.object{
+  width:20.6vw;
+  height: 30.2vw;
+}
+
+.button_arrow_right > svg {
+  position: absolute;
+  z-index: 2;
+}
+
+.object>a>img,.object_before_breakpoint>a>img{
+  width: 20.6vw;
+  width: 20.6vw;
+}
+
+.object>h3,.object_before_breakpoint>h3{
+  margin-top: 1.67vw;
+  color: #3077c6;
+  font-size: 1.67vw;
+  font-weight: 400;
+}
+
+.object>p,.object_before_breakpoint>p{
+  margin-top: 1.67vw;
+  font-size: 1.67vw;
+  font-weight: 400;
+  color:#BFBFBF;
+}
+
+.button_arrow_right,.button_arrow_right>svg{
+  width: 2.78vw;
+  height: 2.78vw;
+  position: absolute;
+}
+
+.button_arrow_right{
+  margin-left: 84.4vw;
+  margin-bottom: 7vw;
 }
 
 footer {
@@ -309,7 +342,6 @@ footer {
   background-color: #10367c;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .logo {
@@ -318,9 +350,10 @@ footer {
 
 .content_footer {
   margin-top: 8.33vw;
+  width: 100%;
   height: 21.53vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .about {
@@ -337,7 +370,6 @@ b {
   text-decoration: none;
   font-size: 1.39vw;
 }
-
 .property_types {
   width: 9.24vw;
   height: 21.53vw;
@@ -345,14 +377,12 @@ b {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .property_types > a,
 b {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.39vw;
 }
-
 .support_footer {
   width: 16.18vw;
   height: 8.47vw;
@@ -360,63 +390,56 @@ b {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .support_footer > a,
 b {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.39vw;
-} 
-
+}
 footer > a {
   margin-top: 4.44vw;
+  margin-left: 7.15vw;
   color: #ffffff;
   font-size: 0.97vw;
 }
 
+
 @media (max-width: 360px) {
+  
   .triphouse_site{
     width: 100%;
     height: 148vw;
-  } 
-
+  }
   header{
     width: 91%;
     height: 13.333vw;
     margin-top: 0;
  }
-
  header > svg {
   height: 6.67vw;
   width: 33.87vw;
 }
-
 .night {
   margin-right: 4.44vw;
   width: 4.44vw;
   height: 4.44vw;
 }
-
 .account {
   width: 6.66vw;
   height: 6.66vw;
   margin-right: 4.44vw;
 }
-
 .attractions {
   display: none;
 }
-
 .stays {
   display: none;
 }
-
 .menu{
   display: block;
   width: 6.667vw;
   height: 4.44vw;
 }
-
 .page {
   width: 91%;
   height: 112.5vw;
@@ -425,70 +448,58 @@ footer > a {
   flex-direction: column;
   align-items: center;
 }
-
 .page>h1{
   font-size: 8.33vw;
   width: 100%;
 }
-
 .label_form{
   display: none;
 }
-
 form{
   margin-top: 8.61vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 66vw;
+  width: 91vw;
+  height: 65vw;
   background-color: #f5bd41;
   border-radius: 0;
-  border: 0.83vw solid #f5bd41;
 }
-
 .city_input {
-  width: 84vw;
+  width: 86.7vw;
   height: 13.33vw;
   margin-left: 0;
   border-radius: 1.11vw;
   font-size: 4.17vw;
   text-align: center;
-  border: 0.83vw solid #f5bd41;
 }
-
 .date_input {
-  width: 84vw;
+  width: 86.7vw;
   height: 13.33vw;
   font-size: 4.17vw;
   justify-content: space-between;
   text-align: center;
 }
-
 .date_input>input{
   width: 49%;
-  height: 13.33vw  ;
+  height: 13.33vw ;
   border-radius: 1.11vw;
   text-align: center;
-  border: 0.83vw solid #f5bd41;
 }
-
-.date_input>div {
+.date_input>div{
   display: none;
 }
-
 .num_people_input {
-  width: 84vw;
+  width: 86.7vw;
   height: 13.33vw;
   border-radius: 1.11vw;
   font-size: 4.17vw;
   border-radius: 1.11vw;
   text-align: center;
-  border: 0.83vw solid #f5bd41;
 }
-
 form > button {
-  width: 84vw;
+  width: 86.7vw;
   height: 13.33vw;
   background: #3077c6;
   border-radius: 1.11vw;
@@ -497,21 +508,17 @@ form > button {
   font-weight: 500;
   font-size: 4.17vw;
   margin-top:2.2222vw ;
-  border: 0.83vw solid #f5bd41;
 }
-
 .wraper-apps{
   height: 11.1111vw;
   margin-top: 8.89vw;
 }
-
 .apps > a > svg {
   width: 37.5vw;
   height: 11.1111vw;
 }
 
-
-.container {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -519,30 +526,41 @@ form > button {
     height: 178vw;
     background-color: #ffffff;
   }
-
   h2 {
-    margin-top: 6.67vw;
-    font-size: 11.11vw;
-    font-weight: 500;
+    margin-top: 11.11vw;
+    font-size: 7.78vw;
     text-align: center;
+    color: #383838;
   }
-
   hr {
     display: none;
   }
-
   .wrapper {
     margin-top: 9.7vw;
     display: flex;
     flex-direction: column;
     height: 138.89vw;
   }
-
   .reviews > a,
   .booking > a,
   .communication > a,
   .support > a {
     font-size: 4.17vw;
+  }
+  
+  .region_before_breakpoint{
+    display: none;
+  }
+
+  .button_arrow_right,.button_arrow_right>svg{
+    width: 7.78vw;
+    height: 7.78vw;
+    position: absolute;
+  }
+  
+   .button_arrow_right{
+    margin-left: 88vw;
+    margin-bottom: 7vw;
   }
 
   footer {
@@ -553,14 +571,12 @@ form > button {
     flex-direction: column;
     align-items: center;
   }
-
   .logo {
     display: block;
     margin-top: 11.11vw;
     width: 27.22vw;
     height: 5.28vw;
   }
-
   .reviews,
   .booking,
   .communication,
@@ -572,26 +588,64 @@ form > button {
     justify-content: space-between;
     align-items: center;
   }
-
- .support > svg {
+ 
+  .support > svg {
     width: 14.58vw;
     height: 17.825vw;
   }
-
   .communication > svg {
     width: 16.2vw;
     height: 16.2vw;
   }
-
   .booking > svg {
     width: 19.44vw;
     height: 12.96vw;
   }
-
   .reviews > svg {
     width: 17.825vw;
     height: 16.2vw;
   }
+
+.homes_guests_loves{
+  width: 100%;
+  height: 98.33vw;
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper_for_category{
+  margin-top: 8.88vw;
+  width: 91.67vw;
+  height: 53.6vw;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+}
+
+.object{
+  width:43.33vw;
+  height: 53.6vw;
+}
+
+.object>a>img{
+  width:43.33vw;
+  height:43.33vw;
+}
+
+.object_before_breakpoint{
+  display: none;
+}
+.object>h3{
+  margin-top: 2.22vw;
+  font-size: 3.33vw;
+}
+
+.object>p{
+  margin-top: 1.11vw;
+  font-size: 3.33vw;
+}
 
   .content_footer {
     margin-top: 11.11vw;
@@ -600,7 +654,6 @@ form > button {
     display: flex;
     justify-content: space-around;
   }
-
   .about {
     width: 20%;
     height: 5vw;
@@ -608,17 +661,14 @@ form > button {
     flex-direction: column;
     justify-content: space-between;
   }
-
   .about > a {
     display: none;
   }
-
   .about > b,
   .property_types > b,
   .support_footer > b {
     font-size: 4.17vw;
   }
-
   .property_types {
     width: 48%;
     height: 5vw;
@@ -626,11 +676,9 @@ form > button {
     flex-direction: column;
     justify-content: space-between;
   }
-
   .property_types > a {
     display: none;
   }
-
   .support_footer {
     width: 20%;
     height: 5vw;
@@ -638,70 +686,15 @@ form > button {
     flex-direction: column;
     justify-content: space-between;
   }
-
   .support_footer > a {
     display: none;
   }
-
   footer > a {
     font-size: 3.333vw;
     margin: 0;
     margin-top: 8.89vw;
-    text-align: center;
   }
   
 }
-
-.col-1{
-   width: 7.15vw;
-}
-
-.col-2{
-  width: 14.3vw;
-}
-
-.col-3{
-  width: 21.5vw;
-}
-
-.col-4{
-  width: 28.6vw;
-}
-
-.col-5{
-  width: 35.8vw;
-}
-
-.col-6{
-  width: 43vw;
-}
-
-.col-7{
-  width: 50vw;
-}
-
-.col-8{
-  width: 57vw;
-}
-
-.col-9{
-  width: 64vw;
-}
-
-.col-10{
-  width: 71vw;
-}
-
-.col-11{
-  width: 78vw;
-}
-
-.col-12{
-  width: 85vw;
-}
-
-
-
-
 
 
