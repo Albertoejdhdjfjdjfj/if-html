@@ -19,58 +19,59 @@ body>svg{
   z-index: -1;
 }
 
-
 .triphouse_site {
   width: 100%;
   height: 62.5vw;
   background: url(../img/background.png);
-  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 header {
   width: 85.6vw;
   height: 3.19vw;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-top: 3.54vw;
 }
+
 header > svg {
   height: 2.78vw;
-  width: 14.24vw;
+  width: 16vw;
 }
+
 .wrapper_nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
+
 .wrapper_nav,
 a {
   color: white;
   font-size: 1.667vw;
 }
+
 .night {
   margin-right: 1.667vw;
   width: 2.1vw;
   height: 2.1vw;
 }
+
 .account {
   width: 2.78vw;
   height: 2.78vw;
 }
+
 .menu{
   display: none;
 }
-.account_hover{
-  width: 2.78vw;
-  height: 2.78vw;
-  display: none;
-}
+
 .night:hover,.account:hover{
-  filter: invert(16%) sepia(100%) saturate(6087%) hue-rotate(2deg) brightness(115%) contrast(123%);  
+  filter: brightness(0) saturate(100%) invert(88%) sepia(82%) saturate(6390%) hue-rotate(322deg) brightness(100%) contrast(92%); 
 }
 
 .attractions {
@@ -79,32 +80,39 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
 .attractions > hr{
   display: none;
 }
+
 .attractions:hover > hr {
   display: inline-block;
   margin-top: 2.43vw;
   position: absolute;
   width: 6.47vw;
-  height: 1px;
+  height: 2px;
   background-color: #f5bd41;
+  border: none;
 }
+
 .stays {
   margin-right: 1.667vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .stays > hr{
   display: none;
 }
+
 .stays:hover > hr {
+  border: none;
   display: inline-block;
   margin-top: 2.43vw;
   position: absolute;
   width: 3.47vw;
-  height: 1px;
+  height: 2px;
   background-color: #f5bd41;
 }
 .page {
@@ -857,7 +865,7 @@ form > button {
     height: 49.4vw;
   }
 
-  .regions > .button_arrow_down{
+  .button_arrow_down{
     display: none;
   }
 
