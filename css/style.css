@@ -347,14 +347,14 @@ h2 {
 .wrapper_for_tabs{
   margin-top: 7.22vw;
   width: 85.5vw;
-  height: 4.44vw;
   display: flex;
   justify-content: flex-start;
 }
 
 .tabs{
   background-color: #F3F3F4;
-  border-radius: 0.6vw; 
+  border-radius: 0.6vw;
+  height: 4.44vw; 
 }
 
 .regions_,.places_of_interest,.cities{
@@ -791,7 +791,7 @@ form > button {
     height: 49.4vw;
   }
 
-  .regions > .button_arrow_down{
+  .button_arrow_down{
     display: none;
   }
 
