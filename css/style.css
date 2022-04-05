@@ -84,9 +84,11 @@
   .attractions:hover::after{
     content: ' ';
     display: block;
-    height: 2px;
+    height: 3px;
     width: 6.47vw;
     background-color: #f5bd41;
+    position: absolute;
+    margin-top: 2.3vw;
   }
 
   .stays {
@@ -99,9 +101,11 @@
   .stays:hover::after{
     content: ' ';
     display: block;
-    height: 2px;
+    height: 3px;
     width: 3.47vw;
     background-color: #f5bd41;
+    position: absolute;
+    margin-top: 2.3vw;
   }
 
   .page {
