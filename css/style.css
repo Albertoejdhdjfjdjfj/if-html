@@ -81,18 +81,12 @@
     align-items: center;
   }
 
-  .attractions > hr{
-    display: none;
-  }
-
-  .attractions:hover > hr {
-    display: inline-block;
-    margin-top: 2.43vw;
-    position: absolute;
-    width: 6.47vw;
+  .attractions:hover::after{
+    content: ' ';
+    display: block;
     height: 2px;
+    width: 6.47vw;
     background-color: #f5bd41;
-    border: none;
   }
 
   .stays {
@@ -102,17 +96,11 @@
     align-items: center;
   }
 
-  .stays > hr{
-    display: none;
-  }
-
-  .stays:hover > hr {
-    border: none;
-    display: inline-block;
-    margin-top: 2.43vw;
-    position: absolute;
-    width: 3.47vw;
+  .stays:hover::after{
+    content: ' ';
+    display: block;
     height: 2px;
+    width: 3.47vw;
     background-color: #f5bd41;
   }
 
