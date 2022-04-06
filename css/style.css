@@ -438,7 +438,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(56, 56, 56, 0.4);
 }
 
 .region_before_breakpoint>a>button,
@@ -615,7 +614,7 @@ b {
 }
 
 
-.guests_reviews{
+.guests_reviews {
   width: 100%;
   height: 80.625vw;
   display: flex;
@@ -623,14 +622,14 @@ b {
   align-items: center;
 }
 
-.wrapper_reviews{
+.wrapper_reviews {
   margin-top: 7.22vw;
   width: 85.6vw;
   display: flex;
   justify-content: space-between;
 }
 
-.review{
+.review {
   width: 27.8vw;
   height: 52.8vw;
   display: flex;
@@ -639,11 +638,11 @@ b {
   background-color: #EAF0F9;
 }
 
-.review > img{
+.review>img {
   width: 100%;
 }
 
-.wrapper_for_location_review_number{
+.wrapper_for_location_review_number {
   display: flex;
   justify-content: space-between;
   width: 24.5vw;
@@ -651,26 +650,27 @@ b {
   margin-top: 1vw;
 }
 
-.wrapper_for_location{
+.wrapper_for_location {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.review_number_grade{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
+.review_number_grade {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
 }
 
-.location,.city_contry{
+.location,
+.city_contry {
   font-size: 1.25vw;
   color: #3077C6;
 }
 
-.review_number{
+.review_number {
   height: 2vw;
   font-size: 1.35vw;
   color: white;
@@ -683,10 +683,10 @@ b {
 
 }
 
-.grade{
+.grade {
   margin-bottom: 6px;
   font-size: 0.97vw;
-  color:#BFBFBF;
+  color: #BFBFBF;
 }
 
 .user_review {
@@ -697,27 +697,27 @@ b {
   margin-top: 1vw;
 }
 
-.user_review > img{
+.user_review>img {
   width: 3.7vw;
   height: 3.7vw;
   margin-top: 3px;
 }
 
-.user_review>p{
+.user_review>p {
   font-size: 1.25vw;
   margin-left: 1.48vw;
 }
 
-.user_review>p>img{
+.user_review>p>img {
   width: 5.7vw;
   height: 1.5vw;
 }
 
-.comment-text{
+.comment-text {
   margin-top: 2.5vw;
-    width: 24.4vw;
-    height: 7.3vw;
-    font-size: 1.25vw;
+  width: 24.4vw;
+  height: 7.3vw;
+  font-size: 1.25vw;
 }
 
 
@@ -728,13 +728,15 @@ b {
   flex-direction: column;
   justify-content: space-between;
 }
-.support_footer > a,
+
+.support_footer>a,
 b {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.39vw;
 }
-footer > a {
+
+footer>a {
   margin-top: 4.44vw;
   margin-left: 7.15vw;
   color: #ffffff;
@@ -743,7 +745,7 @@ footer > a {
 
 
 @media (max-width: 360px) {
-  
+
   .triphouse_site {
     width: 100%;
     height: 148vw;
@@ -885,48 +887,53 @@ footer > a {
     height: 178vw;
     background-color: #ffffff;
   }
+
   h2 {
     margin-top: 11.11vw;
     font-size: 7.78vw;
     text-align: center;
     color: #383838;
   }
+
   hr {
     display: none;
   }
+
   .wrapper {
     margin-top: 9.7vw;
     display: flex;
     flex-direction: column;
     height: 138.89vw;
   }
-  .reviews > a,
-  .booking > a,
-  .communication > a,
-  .support > a {
+
+  .reviews>a,
+  .booking>a,
+  .communication>a,
+  .support>a {
     font-size: 4.17vw;
   }
-  
-  .region_before_breakpoint{
+
+  .region_before_breakpoint {
     display: none;
   }
 
-  .button_arrow_right,.button_arrow_right>svg{
+  .button_arrow_right,
+  .button_arrow_right>svg {
     width: 7.78vw;
     height: 7.78vw;
     position: absolute;
   }
-  
-   .button_arrow_right{
+
+  .button_arrow_right {
     margin-left: 88vw;
     margin-bottom: 7vw;
   }
 
-  .the_best_destinations{
+  .the_best_destinations {
     height: 105.28vw;
-  } 
+  }
 
-  .wrapper_for_tabs{
+  .wrapper_for_tabs {
     margin-top: 8.89vw;
     width: 100%;
     height: 8.89vw;
@@ -962,80 +969,99 @@ footer > a {
   }
 
 
-  .wrapper_for_regions{
+  .wrapper_for_regions {
     width: 91.3vw;
     margin-top: 4.44vw;
   }
 
-  .regions .region{
+  .regions .region {
     height: 49.4vw;
   }
 
-  .button_arrow_down{
+  .button_arrow_down {
     display: none;
   }
 
-  .regions > .button_arrow_right{
+  .regions>.button_arrow_right {
     display: block;
     margin-top: 19vw;
   }
 
-  .region{
+  .region {
     width: 43vw;
     height: 97.2vw;
   }
-  
-  .region>h3{
+
+  .region:hover>a>img {
+    filter: opacity(100%);
+  }
+
+  .region_before_breakpoint:hover>a>img {
+    filter: opacity(100%);
+  }
+
+  .region:hover>a>button {
+    display: none;
+  }
+
+  .region_before_breakpoint:hover>a>button {
+    display: none;
+  }
+
+  .region>h3 {
     margin-top: 2.22vw;
     font-size: 3.33vw;
   }
 
-  .button_arrow_down,svg{
+  .button_arrow_down,
+  svg {
     height: 2.78vw;
     width: 2.78vw;
   }
 
-  .pop-up_window{
+  .pop-up_window {
     display: none;
   }
 
-  .before_beakpoint{
+  .before_beakpoint {
     display: none;
   }
 
-  .guests_reviews{
+  .guests_reviews {
     height: 203vw;
     background-color: #EAF0F9;
   }
 
-  .review{
+  .review {
     width: 91vw;
     height: 174vw;
   }
 
-  .wrapper_reviews{
-    width:100%;
+  .wrapper_reviews {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .wrapper_for_location_review_number{
+  .wrapper_for_location_review_number {
     width: 100%;
     height: 12vw;
   }
 
-  .location,.city_contry{
+  .location,
+  .city_contry {
     font-size: 4.16vw;
     color: #3077C6;
   }
-  .review_number{
+
+  .review_number {
     height: 6vw;
     font-size: 4vw;
     width: 9vw;
     border-radius: 1.8vw;
   }
 
-  .grade{
+  .grade {
     margin-bottom: 2px;
     font-size: 3vw;
   }
@@ -1046,30 +1072,30 @@ footer > a {
     margin-top: 3vw;
   }
 
-  .user_review > img{
+  .user_review>img {
     width: 15vw;
     height: 15vw;
     margin-top: 6px;
   }
 
-  .user_review>p{
+  .user_review>p {
     font-size: 4vw;
     margin-left: 4vw;
     margin-top: 2vw;
   }
 
-  .user_review>p>img{
+  .user_review>p>img {
     width: 20.6vw;
     height: 4.72vw;
   }
 
-  .comment-text{
+  .comment-text {
     margin-top: 10vw;
     width: 90.8vw;
     height: 23.9vw;
     font-size: 4vw;
   }
-  
+
 
   footer {
     width: 100%;
@@ -1079,12 +1105,14 @@ footer > a {
     flex-direction: column;
     align-items: center;
   }
+
   .logo {
     display: block;
     margin-top: 11.11vw;
     width: 27.22vw;
     height: 5.28vw;
   }
+
   .reviews,
   .booking,
   .communication,
@@ -1096,64 +1124,68 @@ footer > a {
     justify-content: space-between;
     align-items: center;
   }
- 
-  .support > svg {
+
+  .support>svg {
     width: 14.58vw;
     height: 17.825vw;
   }
-  .communication > svg {
+
+  .communication>svg {
     width: 16.2vw;
     height: 16.2vw;
   }
-  .booking > svg {
+
+  .booking>svg {
     width: 19.44vw;
     height: 12.96vw;
   }
-  .reviews > svg {
+
+  .reviews>svg {
     width: 17.825vw;
     height: 16.2vw;
   }
 
-.homes_guests_loves{
-  width: 100%;
-  height: 98.33vw;
-  background-color: #E5E5E5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .homes_guests_loves {
+    width: 100%;
+    height: 98.33vw;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.wrapper_for_category{
-  margin-top: 8.88vw;
-  width: 91.67vw;
-  height: 53.6vw;
-  display: flex;
-  align-items: center;
- justify-content: space-between;
-}
+  .wrapper_for_category {
+    margin-top: 8.88vw;
+    width: 91.67vw;
+    height: 53.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.object{
-  width:43.33vw;
-  height: 53.6vw;
-}
+  .object {
+    width: 43.33vw;
+    height: 53.6vw;
+  }
 
-.object>a>img{
-  width:43.33vw;
-  height:43.33vw;
-}
+  .object>a>img {
+    width: 43.33vw;
+    height: 43.33vw;
+  }
 
-.object_before_breakpoint{
-  display: none;
-}
-.object>h3{
-  margin-top: 2.22vw;
-  font-size: 3.33vw;
-}
+  .object_before_breakpoint {
+    display: none;
+  }
 
-.object>p{
-  margin-top: 1.11vw;
-  font-size: 3.33vw;
-}
+  .object>h3 {
+    margin-top: 2.22vw;
+    font-size: 3.33vw;
+  }
+
+  .object>p {
+    margin-top: 1.11vw;
+    font-size: 3.33vw;
+  }
 
   .content_footer {
     margin-top: 11.11vw;
@@ -1162,6 +1194,7 @@ footer > a {
     display: flex;
     justify-content: space-around;
   }
+
   .about {
     width: 20%;
     height: 5vw;
@@ -1169,14 +1202,17 @@ footer > a {
     flex-direction: column;
     justify-content: space-between;
   }
-  .about > a {
+
+  .about>a {
     display: none;
   }
-  .about > b,
-  .property_types > b,
-  .support_footer > b {
+
+  .about>b,
+  .property_types>b,
+  .support_footer>b {
     font-size: 4.17vw;
   }
+
   .property_types {
     width: 48%;
     height: 5vw;
@@ -1184,9 +1220,11 @@ footer > a {
     flex-direction: column;
     justify-content: space-between;
   }
-  .property_types > a {
+
+  .property_types>a {
     display: none;
   }
+
   .support_footer {
     width: 20%;
     height: 5vw;
@@ -1194,15 +1232,15 @@ footer > a {
     flex-direction: column;
     justify-content: space-between;
   }
-  .support_footer > a {
+
+  .support_footer>a {
     display: none;
   }
-  footer > a {
+
+  footer>a {
     font-size: 3.333vw;
     margin: 0;
     margin-top: 8.89vw;
   }
-  
+
 }
-
-
