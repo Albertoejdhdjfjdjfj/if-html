@@ -744,117 +744,138 @@ footer > a {
 
 @media (max-width: 360px) {
   
-  .triphouse_site{
+  .triphouse_site {
     width: 100%;
     height: 148vw;
   }
-  header{
+
+  header {
     width: 91%;
     height: 13.333vw;
     margin-top: 0;
- }
- header > svg {
-  height: 6.67vw;
-  width: 33.87vw;
-}
-.night {
-  margin-right: 4.44vw;
-  width: 4.44vw;
-  height: 4.44vw;
-}
-.account {
-  width: 6.66vw;
-  height: 6.66vw;
-  margin-right: 4.44vw;
-}
-.attractions {
-  display: none;
-}
-.stays {
-  display: none;
-}
-.menu{
-  display: block;
-  width: 6.667vw;
-  height: 4.44vw;
-}
-.page {
-  width: 91%;
-  height: 112.5vw;
-  margin-top: 14.44vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.page>h1{
-  font-size: 8.33vw;
-  width: 100%;
-}
-.label_form{
-  display: none;
-}
-form{
-  margin-top: 8.61vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 91vw;
-  height: 65vw;
-  background-color: #f5bd41;
-  border-radius: 0;
-}
-.city_input {
-  width: 86.7vw;
-  height: 13.33vw;
-  margin-left: 0;
-  border-radius: 1.11vw;
-  font-size: 4.17vw;
-  text-align: center;
-}
-.date_input {
-  width: 86.7vw;
-  height: 13.33vw;
-  font-size: 4.17vw;
-  justify-content: space-between;
-  text-align: center;
-}
-.date_input>input{
-  width: 49%;
-  height: 13.33vw ;
-  border-radius: 1.11vw;
-  text-align: center;
-}
-.date_input>div{
-  display: none;
-}
-.num_people_input {
-  width: 86.7vw;
-  height: 13.33vw;
-  border-radius: 1.11vw;
-  font-size: 4.17vw;
-  border-radius: 1.11vw;
-  text-align: center;
-}
-form > button {
-  width: 86.7vw;
-  height: 13.33vw;
-  background: #3077c6;
-  border-radius: 1.11vw;
-  font-size: 1.667vw;
-  color: white;
-  font-weight: 500;
-  font-size: 4.17vw;
-  margin-top:2.2222vw ;
-}
-.wraper-apps{
-  height: 11.1111vw;
-  margin-top: 8.89vw;
-}
-.apps > a > svg {
-  width: 37.5vw;
-  height: 11.1111vw;
-}
+  }
+
+  header>svg {
+    height: 6.67vw;
+    width: 33.87vw;
+  }
+
+  .night {
+    margin-right: 4.44vw;
+    width: 4.44vw;
+    height: 4.44vw;
+  }
+
+  .account {
+    width: 6.66vw;
+    height: 6.66vw;
+    margin-right: 4.44vw;
+  }
+
+  .attractions {
+    display: none;
+  }
+
+  .stays {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    width: 6.667vw;
+    height: 4.44vw;
+  }
+
+  .page {
+    width: 91%;
+    height: 112.5vw;
+    margin-top: 14.44vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page>h1 {
+    font-size: 8.33vw;
+    width: 100%;
+  }
+
+  .label_form {
+    display: none;
+  }
+
+  form {
+    margin-top: 8.61vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    height: 64vw;
+    background-color: #f5bd41;
+    border-radius: 0;
+  }
+
+  .city_input {
+    margin-top: 0.6vw;
+    width: 86.7vw;
+    height: 13.33vw;
+    margin-left: 0;
+    border-radius: 1.11vw;
+    border-top: ;
+    font-size: 4.17vw;
+    text-align: center;
+  }
+
+  .date_input {
+    width: 86.7vw;
+    height: 13.33vw;
+    font-size: 4.17vw;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .date_input>input {
+    width: 49%;
+    height: 13.33vw;
+    border-radius: 1.11vw;
+    text-align: center;
+  }
+
+  .date_input>div {
+    display: none;
+  }
+
+  .num_people_input {
+    width: 86.7vw;
+    height: 13.33vw;
+    border-radius: 1.11vw;
+    font-size: 4.17vw;
+    border-radius: 1.11vw;
+    text-align: center;
+  }
+
+  form>button {
+    width: 86.7vw;
+    height: 13.33vw;
+    background: #3077c6;
+    border-radius: 1.11vw;
+    font-size: 1.667vw;
+    color: white;
+    font-weight: 500;
+    font-size: 4.17vw;
+    margin-bottom: 0.6vw;
+  }
+
+  .wraper-apps {
+    height: 11.1111vw;
+    margin-top: 8.89vw;
+  }
+
+  .apps>a>svg {
+    width: 37.5vw;
+    height: 11.1111vw;
+  }
 
   .container {
     display: flex;
