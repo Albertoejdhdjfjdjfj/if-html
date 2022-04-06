@@ -913,29 +913,33 @@ form > button {
     justify-content: center;
   }
 
-  .tabs{
+  .tabs {
+    background-color: white;
     width: 91.3vw;
-    background-color: #F3F3F4;
     display: flex;
     justify-content: space-between;
   }
 
-  .regions_,.places_of_interest,.cities{
+  .regions_,
+  .places_of_interest,
+  .cities {
+    background-color: white;
+    border: 1px solid #F3F3F4;
     border-radius: 0.6vw;
     width: 30%;
     font-size: 5.28vw;
     height: 8.89vw;
-    background-color: #F3F3F4;
   }
 
-  .places_of_interest{
+  .places_of_interest {
     border-radius: 0.6vw;
     width: 30%;
   }
 
-  .places_of_interest>span{
+  .places_of_interest>span {
     display: none;
   }
+
 
   .wrapper_for_regions{
     width: 91.3vw;
