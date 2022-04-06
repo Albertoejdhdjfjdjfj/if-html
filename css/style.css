@@ -708,9 +708,9 @@ b {
   margin-left: 1.48vw;
 }
 
-.user_review>p>a{
-  font-size: 1.25vw;
-  color:#BFBFBF;
+.user_review>p>img{
+  width: 5.7vw;
+  height: 1.5vw;
 }
 
 .comment-text{
@@ -1058,8 +1058,9 @@ footer > a {
     margin-top: 2vw;
   }
 
-  .user_review>p>a{
-    font-size: 4vw;
+  .user_review>p>img{
+    width: 20.6vw;
+    height: 4.72vw;
   }
 
   .comment-text{
