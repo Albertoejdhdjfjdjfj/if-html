@@ -14,7 +14,7 @@ body {
   align-items: center;
 }
 
-body>svg{
+body > svg {
   position: absolute;
   z-index: -1;
 }
@@ -23,7 +23,6 @@ body>svg{
   width: 100%;
   height: 62.5vw;
   background: url(../img/background.png);
-  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -34,7 +33,6 @@ header {
   width: 85.6vw;
   height: 3.19vw;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-top: 3.54vw;
@@ -42,12 +40,13 @@ header {
 
 header > svg {
   height: 2.78vw;
-  width: 14.24vw;
+  width: 16vw;
 }
 
 .wrapper_nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .wrapper_nav,
@@ -67,18 +66,13 @@ a {
   height: 2.78vw;
 }
 
-.menu{
+.menu {
   display: none;
 }
 
-.account_hover{
-  width: 2.78vw;
-  height: 2.78vw;
-  display: none;
-}
-
-.night:hover,.account:hover{
-  filter: invert(16%) sepia(100%) saturate(6087%) hue-rotate(2deg) brightness(115%) contrast(123%);  
+.night:hover,
+.account:hover {
+  filter: brightness(0) saturate(100%) invert(88%) sepia(82%) saturate(6390%) hue-rotate(322deg) brightness(100%) contrast(92%);
 }
 
 .attractions {
@@ -88,17 +82,14 @@ a {
   align-items: center;
 }
 
-.attractions > hr{
-  display: none;
-}
-
-.attractions:hover > hr {
-  display: inline-block;
-  margin-top: 2.43vw;
-  position: absolute;
+.attractions:hover::after {
+  content: ' ';
+  display: block;
+  height: 3px;
   width: 6.47vw;
-  height: 1px;
   background-color: #f5bd41;
+  position: absolute;
+  margin-top: 2.3vw;
 }
 
 .stays {
@@ -107,21 +98,18 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.stays > hr{
-  display: none;
-}
 
-.stays:hover > hr {
-  display: inline-block;
-  margin-top: 2.43vw;
-  position: absolute;
+.stays:hover::after {
+  content: ' ';
+  display: block;
+  height: 3px;
   width: 3.47vw;
-  height: 1px;
   background-color: #f5bd41;
+  position: absolute;
+  margin-top: 2.3vw;
 }
 
 .page {
-  width: 85.6vw;
   height: 33.8vw;
   margin-top: 14vw;
   display: flex;
@@ -167,7 +155,7 @@ form {
   margin-top: 1.67vw;
 }
 
-form>div{
+form > div {
   display: flex;
   align-items: center;
 }
@@ -194,12 +182,14 @@ form > input {
   justify-content: space-around;
 }
 
-.date_input>input{
+.date_input > input {
   width: 45%;
   border: none;
 }
 
-.num_people_input:hover,.city_input:hover,.date_input:hover {
+.num_people_input:hover,
+.city_input:hover,
+.date_input:hover {
   border: 0.2vw solid #f5bd41;
 }
 
@@ -289,7 +279,7 @@ h2 {
 .communication > a,
 .support > a {
   font-size: 1.67vw;
-  color:black;
+  color: black;
 }
 
 .wrapper_img {
@@ -317,7 +307,7 @@ h2 {
   height: 5.78vw;
 }
 
-.homes_guests_loves{
+.homes_guests_loves {
   width: 100%;
   height: 57.5vw;
   background-color: #EAF0F9;
@@ -326,16 +316,17 @@ h2 {
   align-items: center;
 }
 
-.wrapper_for_category{
+.wrapper_for_category {
   width: 85.6vw;
   height: 57.5vw;
   display: flex;
   align-items: center;
- justify-content: space-between;
+  justify-content: space-between;
 }
 
-.object_before_breakpoint,.object{
-  width:20.6vw;
+.object_before_breakpoint,
+.object {
+  width: 20.6vw;
   height: 30.2vw;
 }
 
@@ -344,34 +335,232 @@ h2 {
   z-index: 2;
 }
 
-.object>a>img,.object_before_breakpoint>a>img{
+.object > a > img,
+.object_before_breakpoint > a > img {
   width: 20.6vw;
   width: 20.6vw;
 }
 
-.object>h3,.object_before_breakpoint>h3{
+.object > h3,
+.object_before_breakpoint > h3 {
   margin-top: 1.67vw;
   color: #3077c6;
   font-size: 1.67vw;
   font-weight: 400;
 }
 
-.object>p,.object_before_breakpoint>p{
+.object > p,
+.object_before_breakpoint > p {
   margin-top: 1.67vw;
   font-size: 1.67vw;
   font-weight: 400;
-  color:#BFBFBF;
+  color: #BFBFBF;
 }
 
-.button_arrow_right,.button_arrow_right>svg{
+.button_arrow_right,
+.button_arrow_right > svg {
   width: 2.78vw;
   height: 2.78vw;
   position: absolute;
 }
 
-.button_arrow_right{
+.button_arrow_right {
   margin-left: 84.4vw;
   margin-bottom: 7vw;
+}
+
+.the_best_destinations {
+  width: 100%;
+  height: 66.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper_for_tabs {
+  margin-top: 7.22vw;
+  width: 85.5vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tabs {
+  background-color: #F3F3F4;
+  border-radius: 0.6vw;
+  height: 4.44vw;
+}
+
+.regions_,
+.places_of_interest,
+.cities {
+  border-radius: 0.6vw;
+  width: 13.33vw;
+  font-size: 1.67vw;
+  border: none;
+  height: 4.44vw;
+  background-color: #F3F3F4;
+}
+
+.regions_:active,
+.places_of_interest:active,
+.cities:active {
+  background-color: #10367c;
+}
+
+.places_of_interest {
+  width: 16.52vw;
+}
+
+.wrapper_for_regions {
+  width: 85.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8.1vw;
+}
+
+.regions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.region_before_breakpoint,
+.region {
+  width: 20.6vw;
+  height: 24.3vw;
+}
+
+.region > a,
+.region_before_breakpoint > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(56, 56, 56, 0.4);
+}
+
+.region_before_breakpoint > a > button,
+.region > a > button {
+  position: absolute;
+  display: none;
+  z-index: 2;
+  width: 8.88vw;
+  height: 3.33vw;
+  border: 0.07vw solid #3077C6;
+  border-radius: 0.6vw;
+  font-size: 1.25vw;
+  color: #3077C6;
+}
+
+.region:hover > a > img {
+  filter: opacity(50%);
+}
+
+.region_before_breakpoint:hover > a > img {
+  filter: opacity(50%);
+}
+
+.region:hover > a > button {
+  display: block;
+}
+
+.region_before_breakpoint:hover > a > button {
+  display: block;
+}
+
+.region_before_breakpoint > a > img,
+.region > a > img {
+  width: 100%
+}
+
+.region_before_breakpoint > h3,
+.region > h3 {
+  margin-top: 1.67vw;
+  font-size: 1.67vw;
+  color: #3077C6;
+  font-weight: 400;
+}
+
+.button_arrow_down,
+svg {
+  height: 2.78vw;
+  width: 2.78vw;
+}
+
+.regions > .button_arrow_right {
+  display: none;
+}
+
+.button_arrow_down {
+  margin-top: 4.6vw;
+}
+
+.button_arrow_down > svg {
+  width: 100%;
+}
+
+.pop-up_window {
+  width: 85.56vw;
+  height: 13.9vw;
+  background-color: #EAF0F9;
+  display: flex;
+  flex-direction: row;
+}
+
+.user {
+  width: 5.97vw;
+  height: 13.9vw;
+  margin-left: 1.67vw;
+  display: flex;
+  align-items: center;
+}
+
+.user > img {
+  width: 100%;
+}
+
+.pop-up_window > .sign_up {
+  width: 72vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.67vw;
+}
+
+.pop-up_window > .sign_up > h4 {
+  font-size: 1.67vw;
+  font-weight: 500;
+  margin-bottom: 1.45vw;
+}
+
+.button_to_window {
+  width: 8.89vw;
+  height: 3.33vw;
+  border: 0.07vw solid #3077c6;
+  ;
+  color: #3077c6;
+  border-radius: 0.56vw;
+  font-size: 1.25vw;
+}
+
+.pop-up_window > .exit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 2vw;
+}
+
+.exit_button {
+  width: 1.8vw;
+  height: 1.8vw;
+  margin-top: 1.67vw;
+  border: none;
+  background-color: #EAF0F9;
+}
+
+.exit_button > svg {
+  width: 100%;
 }
 
 footer {
@@ -448,139 +637,141 @@ footer > a {
 
 
 @media (max-width: 360px) {
-  
-  .triphouse_site{
+
+  .triphouse_site {
     width: 100%;
     height: 148vw;
   }
 
-  header{
+  header {
     width: 91%;
     height: 13.333vw;
     margin-top: 0;
- }
+  }
 
- header > svg {
-  height: 6.67vw;
-  width: 33.87vw;
-}
+  header > svg {
+    height: 6.67vw;
+    width: 33.87vw;
+  }
 
-.night {
-  margin-right: 4.44vw;
-  width: 4.44vw;
-  height: 4.44vw;
-}
+  .night {
+    margin-right: 4.44vw;
+    width: 4.44vw;
+    height: 4.44vw;
+  }
 
-.account {
-  width: 6.66vw;
-  height: 6.66vw;
-  margin-right: 4.44vw;
-}
+  .account {
+    width: 6.66vw;
+    height: 6.66vw;
+    margin-right: 4.44vw;
+  }
 
-.attractions {
-  display: none;
-}
+  .attractions {
+    display: none;
+  }
 
-.stays {
-  display: none;
-}
+  .stays {
+    display: none;
+  }
 
-.menu{
-  display: block;
-  width: 6.667vw;
-  height: 4.44vw;
-}
+  .menu {
+    display: block;
+    width: 6.667vw;
+    height: 4.44vw;
+  }
 
-.page {
-  width: 91%;
-  height: 112.5vw;
-  margin-top: 14.44vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .page {
+    width: 91%;
+    height: 112.5vw;
+    margin-top: 14.44vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.page>h1{
-  font-size: 8.33vw;
-  width: 100%;
-}
+  .page > h1 {
+    font-size: 8.33vw;
+    width: 100%;
+  }
 
-.label_form{
-  display: none;
-}
+  .label_form {
+    display: none;
+  }
 
-form{
-  margin-top: 8.61vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 91vw;
-  height: 65vw;
-  background-color: #f5bd41;
-  border-radius: 0;
-}
+  form {
+    margin-top: 8.61vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    height: 64vw;
+    background-color: #f5bd41;
+    border-radius: 0;
+  }
 
-.city_input {
-  width: 86.7vw;
-  height: 13.33vw;
-  margin-left: 0;
-  border-radius: 1.11vw;
-  font-size: 4.17vw;
-  text-align: center;
-}
+  .city_input {
+    margin-top: 0.6vw;
+    width: 86.7vw;
+    height: 13.33vw;
+    margin-left: 0;
+    border-radius: 1.11vw;
+    border-top: ;
+    font-size: 4.17vw;
+    text-align: center;
+  }
 
-.date_input {
-  width: 86.7vw;
-  height: 13.33vw;
-  font-size: 4.17vw;
-  justify-content: space-between;
-  text-align: center;
-}
+  .date_input {
+    width: 86.7vw;
+    height: 13.33vw;
+    font-size: 4.17vw;
+    justify-content: space-between;
+    text-align: center;
+  }
 
-.date_input>input{
-  width: 49%;
-  height: 13.33vw ;
-  border-radius: 1.11vw;
-  text-align: center;
-}
+  .date_input > input {
+    width: 49%;
+    height: 13.33vw;
+    border-radius: 1.11vw;
+    text-align: center;
+  }
 
-.date_input>div{
-  display: none;
-}
+  .date_input > div {
+    display: none;
+  }
 
-.num_people_input {
-  width: 86.7vw;
-  height: 13.33vw;
-  border-radius: 1.11vw;
-  font-size: 4.17vw;
-  border-radius: 1.11vw;
-  text-align: center;
-}
+  .num_people_input {
+    width: 86.7vw;
+    height: 13.33vw;
+    border-radius: 1.11vw;
+    font-size: 4.17vw;
+    border-radius: 1.11vw;
+    text-align: center;
+  }
 
-form > button {
-  width: 86.7vw;
-  height: 13.33vw;
-  background: #3077c6;
-  border-radius: 1.11vw;
-  font-size: 1.667vw;
-  color: white;
-  font-weight: 500;
-  font-size: 4.17vw;
-  margin-top:2.2222vw ;
-}
+  form > button {
+    width: 86.7vw;
+    height: 13.33vw;
+    background: #3077c6;
+    border-radius: 1.11vw;
+    font-size: 1.667vw;
+    color: white;
+    font-weight: 500;
+    font-size: 4.17vw;
+    margin-bottom: 0.6vw;
+  }
 
-.wraper-apps{
-  height: 11.1111vw;
-  margin-top: 8.89vw;
-}
+  .wraper-apps {
+    height: 11.1111vw;
+    margin-top: 8.89vw;
+  }
 
-.apps > a > svg {
-  width: 37.5vw;
-  height: 11.1111vw;
-}
+  .apps > a > svg {
+    width: 37.5vw;
+    height: 11.1111vw;
+  }
 
-.container {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -613,20 +804,98 @@ form > button {
   .support > a {
     font-size: 4.17vw;
   }
-  
-  .region_before_breakpoint{
+
+  .region_before_breakpoint {
     display: none;
   }
 
-  .button_arrow_right,.button_arrow_right>svg{
+  .button_arrow_right,
+  .button_arrow_right > svg {
     width: 7.78vw;
     height: 7.78vw;
     position: absolute;
   }
-  
-   .button_arrow_right{
+
+  .button_arrow_right {
     margin-left: 88vw;
     margin-bottom: 7vw;
+  }
+
+  .the_best_destinations {
+    height: 105.28vw;
+  }
+
+  .wrapper_for_tabs {
+    margin-top: 8.89vw;
+    width: 100%;
+    height: 8.89vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tabs {
+    background-color: white;
+    width: 91.3vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .regions_,
+  .places_of_interest,
+  .cities {
+    background-color: white;
+    border: 1px solid #F3F3F4;
+    border-radius: 0.6vw;
+    width: 30%;
+    font-size: 5.28vw;
+    height: 8.89vw;
+  }
+
+  .places_of_interest {
+    border-radius: 0.6vw;
+    width: 30%;
+  }
+
+  .places_of_interest > span {
+    display: none;
+  }
+
+  .wrapper_for_regions {
+    width: 91.3vw;
+    margin-top: 4.44vw;
+  }
+
+  .regions .region {
+    height: 49.4vw;
+  }
+
+  .button_arrow_down {
+    display: none;
+  }
+
+  .regions > .button_arrow_right {
+    display: block;
+    margin-top: 19vw;
+  }
+
+  .region {
+    width: 43vw;
+    height: 97.2vw;
+  }
+
+  .region > h3 {
+    margin-top: 2.22vw;
+    font-size: 3.33vw;
+  }
+
+  .button_arrow_down,
+  svg {
+    height: 2.78vw;
+    width: 2.78vw;
+  }
+
+  .pop-up_window {
+    display: none;
   }
 
   footer {
@@ -656,7 +925,7 @@ form > button {
     justify-content: space-between;
     align-items: center;
   }
- 
+
   .support > svg {
     width: 14.58vw;
     height: 17.825vw;
@@ -677,47 +946,47 @@ form > button {
     height: 16.2vw;
   }
 
-.homes_guests_loves{
-  width: 100%;
-  height: 98.33vw;
-  background-color: #E5E5E5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .homes_guests_loves {
+    width: 100%;
+    height: 98.33vw;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.wrapper_for_category{
-  margin-top: 8.88vw;
-  width: 91.67vw;
-  height: 53.6vw;
-  display: flex;
-  align-items: center;
- justify-content: space-between;
-}
+  .wrapper_for_category {
+    margin-top: 8.88vw;
+    width: 91.67vw;
+    height: 53.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.object{
-  width:43.33vw;
-  height: 53.6vw;
-}
+  .object {
+    width: 43.33vw;
+    height: 53.6vw;
+  }
 
-.object>a>img{
-  width:43.33vw;
-  height:43.33vw;
-}
+  .object > a > img {
+    width: 43.33vw;
+    height: 43.33vw;
+  }
 
-.object_before_breakpoint{
-  display: none;
-}
+  .object_before_breakpoint {
+    display: none;
+  }
 
-.object>h3{
-  margin-top: 2.22vw;
-  font-size: 3.33vw;
-}
+  .object > h3 {
+    margin-top: 2.22vw;
+    font-size: 3.33vw;
+  }
 
-.object>p{
-  margin-top: 1.11vw;
-  font-size: 3.33vw;
-}
+  .object > p {
+    margin-top: 1.11vw;
+    font-size: 3.33vw;
+  }
 
   .content_footer {
     margin-top: 11.11vw;
@@ -768,13 +1037,10 @@ form > button {
   .support_footer > a {
     display: none;
   }
-  
+
   footer > a {
     font-size: 3.333vw;
-    margin: 0;
     margin-top: 8.89vw;
   }
-  
+
 }
-
-
