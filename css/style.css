@@ -14,7 +14,7 @@ body {
   align-items: center;
 }
 
-body>svg {
+body > svg {
   position: absolute;
   z-index: -1;
 }
@@ -38,7 +38,7 @@ header {
   margin-top: 3.54vw;
 }
 
-header>svg {
+header > svg {
   height: 2.78vw;
   width: 16vw;
 }
@@ -155,12 +155,12 @@ form {
   margin-top: 1.67vw;
 }
 
-form>div {
+form > div {
   display: flex;
   align-items: center;
 }
 
-form>input {
+form > input {
   height: 4.4vw;
   border-radius: 0.56vw;
   font-weight: 400;
@@ -182,7 +182,7 @@ form>input {
   justify-content: space-around;
 }
 
-.date_input>input {
+.date_input > input {
   width: 45%;
   border: none;
 }
@@ -199,7 +199,7 @@ form>input {
   padding-left: 2vw;
 }
 
-form>button {
+form > button {
   width: 13.33vw;
   background: #3077c6;
   border-radius: 0.56vw;
@@ -216,7 +216,7 @@ form>button {
   justify-content: center;
 }
 
-.apps>a>svg {
+.apps > a > svg {
   width: 9.375vw;
   height: 2.78vw;
 }
@@ -246,7 +246,7 @@ h2 {
   text-align: center;
 }
 
-.container>hr {
+.container > hr {
   margin-top: 1.39vw;
   width: 6.94vw;
   height: 0.278vw;
@@ -274,10 +274,10 @@ h2 {
   align-items: center;
 }
 
-.reviews>a,
-.booking>a,
-.communication>a,
-.support>a {
+.reviews > a,
+.booking > a,
+.communication > a,
+.support > a {
   font-size: 1.67vw;
   color: black;
 }
@@ -287,22 +287,22 @@ h2 {
   height: 6.94vw;
 }
 
-.support>svg {
+.support > svg {
   width: 5.21vw;
   height: 6.37vw;
 }
 
-.communication>svg {
+.communication > svg {
   width: 5.79vw;
   height: 5.79vw;
 }
 
-.booking>svg {
+.booking > svg {
   width: 6.94vw;
   height: 4.63vw;
 }
 
-.reviews>svg {
+.reviews > svg {
   width: 6.37vw;
   height: 5.78vw;
 }
@@ -330,27 +330,27 @@ h2 {
   height: 30.2vw;
 }
 
-.button_arrow_right>svg {
+.button_arrow_right > svg {
   position: absolute;
   z-index: 2;
 }
 
-.object>a>img,
-.object_before_breakpoint>a>img {
+.object > a > img,
+.object_before_breakpoint > a > img {
   width: 20.6vw;
   width: 20.6vw;
 }
 
-.object>h3,
-.object_before_breakpoint>h3 {
+.object > h3,
+.object_before_breakpoint > h3 {
   margin-top: 1.67vw;
   color: #3077c6;
   font-size: 1.67vw;
   font-weight: 400;
 }
 
-.object>p,
-.object_before_breakpoint>p {
+.object > p,
+.object_before_breakpoint > p {
   margin-top: 1.67vw;
   font-size: 1.67vw;
   font-weight: 400;
@@ -358,7 +358,7 @@ h2 {
 }
 
 .button_arrow_right,
-.button_arrow_right>svg {
+.button_arrow_right > svg {
   width: 2.78vw;
   height: 2.78vw;
   position: absolute;
@@ -431,8 +431,8 @@ h2 {
   height: 24.3vw;
 }
 
-.region>a,
-.region_before_breakpoint>a {
+.region > a,
+.region_before_breakpoint > a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -440,8 +440,8 @@ h2 {
   background-color: rgba(56, 56, 56, 0.4);
 }
 
-.region_before_breakpoint>a>button,
-.region>a>button {
+.region_before_breakpoint > a > button,
+.region > a > button {
   position: absolute;
   display: none;
   z-index: 2;
@@ -453,29 +453,29 @@ h2 {
   color: #3077C6;
 }
 
-.region:hover>a>img {
+.region:hover > a > img {
   filter: opacity(50%);
 }
 
-.region_before_breakpoint:hover>a>img {
+.region_before_breakpoint:hover > a > img {
   filter: opacity(50%);
 }
 
-.region:hover>a>button {
+.region:hover > a > button {
   display: block;
 }
 
-.region_before_breakpoint:hover>a>button {
+.region_before_breakpoint:hover > a > button {
   display: block;
 }
 
-.region_before_breakpoint>a>img,
-.region>a>img {
+.region_before_breakpoint > a > img,
+.region > a > img {
   width: 100%
 }
 
-.region_before_breakpoint>h3,
-.region>h3 {
+.region_before_breakpoint > h3,
+.region > h3 {
   margin-top: 1.67vw;
   font-size: 1.67vw;
   color: #3077C6;
@@ -488,7 +488,7 @@ svg {
   width: 2.78vw;
 }
 
-.regions>.button_arrow_right {
+.regions > .button_arrow_right {
   display: none;
 }
 
@@ -496,7 +496,7 @@ svg {
   margin-top: 4.6vw;
 }
 
-.button_arrow_down>svg {
+.button_arrow_down > svg {
   width: 100%;
 }
 
@@ -516,11 +516,11 @@ svg {
   align-items: center;
 }
 
-.user>img {
+.user > img {
   width: 100%;
 }
 
-.pop-up_window>.sign_up {
+.pop-up_window > .sign_up {
   width: 72vw;
   display: flex;
   flex-direction: column;
@@ -528,7 +528,7 @@ svg {
   margin-left: 1.67vw;
 }
 
-.pop-up_window>.sign_up>h4 {
+.pop-up_window > .sign_up > h4 {
   font-size: 1.67vw;
   font-weight: 500;
   margin-bottom: 1.45vw;
@@ -544,7 +544,7 @@ svg {
   font-size: 1.25vw;
 }
 
-.pop-up_window>.exit {
+.pop-up_window > .exit {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -559,7 +559,7 @@ svg {
   background-color: #EAF0F9;
 }
 
-.exit_button>svg {
+.exit_button > svg {
   width: 100%;
 }
 
@@ -591,7 +591,7 @@ footer {
   justify-content: space-between;
 }
 
-.about>a,
+.about > a,
 b {
   color: #ffffff;
   text-decoration: none;
@@ -606,7 +606,7 @@ b {
   justify-content: space-between;
 }
 
-.property_types>a,
+.property_types > a,
 b {
   color: #ffffff;
   text-decoration: none;
@@ -621,14 +621,14 @@ b {
   justify-content: space-between;
 }
 
-.support_footer>a,
+.support_footer > a,
 b {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.39vw;
 }
 
-footer>a {
+footer > a {
   margin-top: 4.44vw;
   margin-left: 7.15vw;
   color: #ffffff;
@@ -649,7 +649,7 @@ footer>a {
     margin-top: 0;
   }
 
-  header>svg {
+  header > svg {
     height: 6.67vw;
     width: 33.87vw;
   }
@@ -689,7 +689,7 @@ footer>a {
     align-items: center;
   }
 
-  .page>h1 {
+  .page > h1 {
     font-size: 8.33vw;
     width: 100%;
   }
@@ -729,14 +729,14 @@ footer>a {
     text-align: center;
   }
 
-  .date_input>input {
+  .date_input > input {
     width: 49%;
     height: 13.33vw;
     border-radius: 1.11vw;
     text-align: center;
   }
 
-  .date_input>div {
+  .date_input > div {
     display: none;
   }
 
@@ -749,7 +749,7 @@ footer>a {
     text-align: center;
   }
 
-  form>button {
+  form > button {
     width: 86.7vw;
     height: 13.33vw;
     background: #3077c6;
@@ -766,7 +766,7 @@ footer>a {
     margin-top: 8.89vw;
   }
 
-  .apps>a>svg {
+  .apps > a > svg {
     width: 37.5vw;
     height: 11.1111vw;
   }
@@ -798,10 +798,10 @@ footer>a {
     height: 138.89vw;
   }
 
-  .reviews>a,
-  .booking>a,
-  .communication>a,
-  .support>a {
+  .reviews > a,
+  .booking > a,
+  .communication > a,
+  .support > a {
     font-size: 4.17vw;
   }
 
@@ -810,7 +810,7 @@ footer>a {
   }
 
   .button_arrow_right,
-  .button_arrow_right>svg {
+  .button_arrow_right > svg {
     width: 7.78vw;
     height: 7.78vw;
     position: absolute;
@@ -856,7 +856,7 @@ footer>a {
     width: 30%;
   }
 
-  .places_of_interest>span {
+  .places_of_interest > span {
     display: none;
   }
 
@@ -873,7 +873,7 @@ footer>a {
     display: none;
   }
 
-  .regions>.button_arrow_right {
+  .regions > .button_arrow_right {
     display: block;
     margin-top: 19vw;
   }
@@ -883,7 +883,7 @@ footer>a {
     height: 97.2vw;
   }
 
-  .region>h3 {
+  .region > h3 {
     margin-top: 2.22vw;
     font-size: 3.33vw;
   }
@@ -926,22 +926,22 @@ footer>a {
     align-items: center;
   }
 
-  .support>svg {
+  .support > svg {
     width: 14.58vw;
     height: 17.825vw;
   }
 
-  .communication>svg {
+  .communication > svg {
     width: 16.2vw;
     height: 16.2vw;
   }
 
-  .booking>svg {
+  .booking > svg {
     width: 19.44vw;
     height: 12.96vw;
   }
 
-  .reviews>svg {
+  .reviews > svg {
     width: 17.825vw;
     height: 16.2vw;
   }
@@ -969,7 +969,7 @@ footer>a {
     height: 53.6vw;
   }
 
-  .object>a>img {
+  .object > a > img {
     width: 43.33vw;
     height: 43.33vw;
   }
@@ -978,12 +978,12 @@ footer>a {
     display: none;
   }
 
-  .object>h3 {
+  .object > h3 {
     margin-top: 2.22vw;
     font-size: 3.33vw;
   }
 
-  .object>p {
+  .object > p {
     margin-top: 1.11vw;
     font-size: 3.33vw;
   }
@@ -1004,13 +1004,13 @@ footer>a {
     justify-content: space-between;
   }
 
-  .about>a {
+  .about > a {
     display: none;
   }
 
-  .about>b,
-  .property_types>b,
-  .support_footer>b {
+  .about > b,
+  .property_types > b,
+  .support_footer > b {
     font-size: 4.17vw;
   }
 
@@ -1022,7 +1022,7 @@ footer>a {
     justify-content: space-between;
   }
 
-  .property_types>a {
+  .property_types > a {
     display: none;
   }
 
@@ -1034,11 +1034,11 @@ footer>a {
     justify-content: space-between;
   }
 
-  .support_footer>a {
+  .support_footer > a {
     display: none;
   }
 
-  footer>a {
+  footer > a {
     font-size: 3.333vw;
     margin-top: 8.89vw;
   }
